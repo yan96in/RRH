@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <!-- common 通用的 -->
+    <string name="app_qq">483632431</string>
+
+    
+    
+    <!-- 主页(main) -->
+    
+    
+    <string name="main_title_home">首页</string>
+	<string name="main_title_msg">订单</string>
+	<string name="main_title_publish">发布</string>
+	<string name="main_title_me">我</string>
+	
+	<string name="task_describe">描述:%s</string>
+	<string name="task_contact">联系人:%s</string>
+	<string name="task_phone">手机:%s</string>
+	<string name="task_address">地址:%s</string>
+	<string name="task_offer_money">预算%s元</string>
+	<string name="task_want_money">TA报价%s元</string>
+	<string name="i_want_money">我报价%s元</string>
+	<string name="task_reciver_time">%s报价</string>
+	<string name="task_deadline">招标剩余时间\n%s</string>
+	<string name="task_plan_time">计划完成时间\n%s</string>
+<!-- 	<string name="fail_tip">提示:%s</string>
+	<string name="employer_score_tip">雇主对我评价:%s</string>
+	<string name="employee_score_tip">接单人对我评价:%s</string> -->
+
+    
+    <!--订单 -->
+	<string name="msg_task_send">我发的单</string>
+	<string name="msg_task_recive">我接的单</string>
+	<string name="msg_look_reciver">查看接单人</string>
+	<string name="pay_alipay_title">支付宝</string>
+    <string name="pay_alipay_title_sub">推荐支付宝用户使用</string>
+    <string name="pay_wx_title">微信</string>
+    <string name="pay_wx_title_sub">推荐安装微信5.0及以上版本使用</string>
+    
+    
+    <!-- 交易记录 -->
+    <string name="order_trade_id">"订单编号:"</string>
+	<string name="order_trade_way">"支付方式:"</string>
+	<string name="order_trade_money">"交易金额:"</string>
+	<string name="order_trade_time">"交易时间:"</string>
+	<string name="order_trade_reason">"原        因:"</string>
+	
+	
+	
+
+	
+    <!-- 发布(send) -->
+    <string name="send_task_type">"私 活 类 型:"</string>
+	<string name="send_task_description">"描            述:"</string>
+	<string name="send_task_dateline">"任务完成日:"</string>
+	<string name="send_task_reward">"预 算 金 额:"</string>
+	<string name="send_task_finishTime">"招标截止日:"</string>
+	<string name="send_task_contact">"联    系    人:"</string>
+	<string name="send_task_address">"联 系  地 址:"</string>
+	<string name="send_task_tel">"手            机:"</string>
+	<string name="send_task_ok">发私活</string>
+
+    <!-- 我(me) -->
+	<string name="me_select_work">职位选择</string>
+	<string name="me_apply_recived_sign">申请接单人认证</string>
+	<string name="me_alipay_account">支付宝账号</string>
+	<string name="me_certificate">我的证书</string>
+	<string name="me_score_self">自我评价</string>
+	<string name="me_score_boss">雇主对我评价</string>
+	<string name="me_score_employee">接单者对我评价</string>
+	
+	
+		<!-- 雇主名片 -->
+     <string name="employer_score">对雇主评价：</string>
+     <string name="employer_sent_success">成功发单次数：</string>
+     <string name="employer_sent_task">他发的单：</string>
+     
+     <string name="employee_certificate">他的证书：</string>
+     <string name="employee_score_self">自我评价：</string>
+     <string name="employee_receive_success">成功接单次数：</string>
+     <string name="employee_be_score">雇主对他评价：</string>
+     
+
+     <!-- 设置 -->
+     <string name="employee_service_terms">
+    1.雇主在选择接单者中标前，接单者可以重新修改报价或者退出竞标.\n\n
+	2.雇主选择接单者中标后，双方将不能退出！否则将影响信誉，协商退出除外.\n\n
+	3.雇主选择接单者中标后同时会按照接单者的报价把佣金转入平台作为担保.\n\n
+	4.接单者中标后请按时保质完成任务，并提交任务验收！雇主有权按你的完成状况申请延长付款！要求重新完善任务.若雇主十分不满意，可以提出拒绝付款.\n\n
+	5.若雇主完成接单者的任务验收确认！平台将在1~3个工作日内将佣金转入你的收款账号.\n\n
+	6.平台将按接单者佣金的5%收取平台交易费！</string>
+	
+    <string name="employer_service_terms">
+        1.雇主在选择中标者前，可以联系接单者协商价格，要求接单者重新修改报价.\n\n
+		2.雇主在选择某接单者中标后，将须按照接单者的报价金额把款项转入平台账户作担保！项目就开始进行，双方将不能中途退出，否则影响信用，双方协商解决除外.\n\n
+		3.接单者提交任务验收时，雇主有权按照任务完成状况，决定是否延长付款时间！要求接单者重新完善任务，若十分不满意，可以提出拒绝付款.\n\n
+		4.雇主确认任务验收后，平台将会把担保金在1~3个工作日内转帐给接单者.\n\n</string>
+    
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:selectView="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/item_top_namecard" />
+
+        <com.cbkj.rrh.widget.SelectItemView
+            android:id="@+id/siv_socre_self"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/img_user_center_bg"
+            selectView:select_img="@drawable/icon_next"
+            selectView:select_tag="@string/action_count"
+            selectView:select_title="@string/employee_score_self" />
+
+        <!-- 他的证书预留位置 -->
+
+        <include layout="@layout/model_certificate_layout" />
+
+        <com.cbkj.rrh.widget.SelectItemView
+            android:id="@+id/siv_recive_task"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/img_user_center_bg"
+            selectView:select_img="@drawable/icon_next"
+            selectView:select_tag="@string/action_count"
+            selectView:select_title="@string/employee_receive_success" />
+
+        <!--
+         <com.bgood.task.widget.SelectItemView
+        android:id="@+id/siv_be_socre"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/img_user_center_bg"
+        selectView:select_img="@drawable/icon_next"
+        selectView:select_tag="@string/action_count"
+        selectView:select_title="@string/employee_be_score" />
+        -->
+
+        <include layout="@layout/model_comment_layout" />
+    </LinearLayout>
+
+</LinearLayout>

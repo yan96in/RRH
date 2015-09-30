@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:background="@drawable/bg_the_bottom_frame"
+    android:divider="@drawable/img_common_h_divider"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+  
+      <TextView 
+        android:id="@+id/tv_title"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="版本更新"
+        />
+  
+  <LinearLayout 
+    android:layout_width="match_parent"
+  	android:layout_height="wrap_content"
+  	android:gravity="center"
+  	android:orientation="vertical"
+  	android:padding="10dp"
+  	>
+  	
+            <TextView 
+        android:id="@+id/tv_progress"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="0%"
+        android:textColor="@color/orange_little"
+        />
+      
+	  <ProgressBar
+	  	android:id="@+id/progress"
+	  	android:layout_width="match_parent"
+	  	android:layout_height="wrap_content"
+	  	style="?android:attr/progressBarStyleHorizontal"
+	  	 android:progressDrawable="@drawable/seekbar_style"
+	  />
+  </LinearLayout>
+  
+  	<TextView 
+            android:id="@+id/tv_cancel"
+            android:text="取  消"
+            android:layout_width="match_parent"
+           android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/gray"
+             android:textSize="16sp"
+            />
+  
+  
+  
+</LinearLayout>

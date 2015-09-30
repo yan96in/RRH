@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circleimg="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_vertical"
+    android:padding="10dp" >
+
+    <com.cbkj.rrh.view.RoundImageView
+        android:id="@+id/iv_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_user_head"
+        circleimg:border_inside_color="@color/orange_little"
+        circleimg:border_outside_color="@color/orange_little"
+        circleimg:border_thickness="@dimen/user_img_border_thick" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_img"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_nick"
+            style="@style/text_base"
+            android:text="啦啦私活"
+            android:textColor="#3a3737"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/text_base"
+            android:layout_marginTop="10dp"
+            android:text="你好了"
+            android:textColor="#919191"
+            android:textSize="15.5sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/text_base"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="你好啊"
+        android:textColor="#b8b8b8"
+        android:textSize="14sp" />
+
+</RelativeLayout>

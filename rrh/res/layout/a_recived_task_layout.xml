@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/all_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_task_content"
+                    android:orientation="vertical" >
+
+                    <include layout="@layout/item_task_top" />
+
+                    <include layout="@layout/item_task_content" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_no_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/text_common"
+                            android:text="我要报价" />
+
+                        <EditText
+                            android:id="@+id/et_offer_money"
+                            style="@style/text_money"
+                            android:layout_width="100dp"
+                            android:background="@drawable/bg_frame_line"
+                            android:hint="请报价" />
+
+                        <TextView
+                            style="@style/text_common"
+                            android:text="元" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_has_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/text_common"
+                            android:text="我的报价" />
+
+                        <TextView
+                            android:id="@+id/tv_myoffer_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/red"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            style="@style/text_common"
+                            android:text="元" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/btn_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_contact_employer" />
+
+            <Button
+                android:id="@+id/btn_affirm_recived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_confirm_orders" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

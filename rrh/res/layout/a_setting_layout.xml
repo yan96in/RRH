@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:selectView="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/img_user_center_bg"
+                android:orientation="vertical" >
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_switch_push"
+                    style="@style/select_layout_notag"
+                    selectView:select_img="@drawable/icon_next"
+                    selectView:select_tag="@string/action_count"
+                    selectView:select_title="@string/setting_switch_push" />
+
+                <View style="@style/cut_line_horizontal" />
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_conact_servicer"
+                    style="@style/select_layout_notag"
+                    selectView:select_img="@drawable/icon_next"
+                    selectView:select_tag="@string/action_count"
+                    selectView:select_title="@string/setting_contact_service" />
+
+                <View style="@style/cut_line_horizontal" />
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_user_guide"
+                    style="@style/select_layout_notag"
+                    selectView:select_img="@drawable/icon_next"
+                    selectView:select_tag="@string/action_count"
+                    selectView:select_title="@string/setting_help" />
+
+                <View style="@style/cut_line_horizontal" />
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_feedback"
+                    style="@style/select_layout_notag"
+                    selectView:select_img="@drawable/icon_next"
+                    selectView:select_tag="@string/action_count"
+                    selectView:select_title="@string/setting_feedback" />
+
+                <View style="@style/cut_line_horizontal" />
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_service_terms"
+                    style="@style/select_layout_notag"
+                    selectView:select_img="@drawable/icon_next"
+                    selectView:select_tag="@string/action_count"
+                    selectView:select_title="@string/setting_service_terms" />
+
+                <View style="@style/cut_line_horizontal" />
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_common_score"
+                    style="@style/select_layout_notag"
+                    selectView:select_img="@drawable/icon_next"
+                    selectView:select_tag="@string/action_count"
+                    selectView:select_title="@string/setting_common_score" />
+
+                <View style="@style/cut_line_horizontal" />
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_check_version"
+                    style="@style/select_layout_notag"
+                    selectView:select_img="@drawable/icon_next"
+                    selectView:select_tag="@string/action_count"
+                    selectView:select_title="@string/setting_check_version" />
+
+                <View style="@style/cut_line_horizontal" />
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_clear_cache"
+                    style="@style/select_layout_notag"
+                    selectView:select_img="@drawable/icon_next"
+                    selectView:select_tag="@string/setting_clear_tag"
+                    selectView:select_title="@string/setting_clear_cache" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/img_user_center_bg"
+                android:orientation="vertical" >
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_about"
+                    style="@style/select_layout_notag"
+                    selectView:select_img="@drawable/icon_next"
+                    selectView:select_tag="@string/action_count"
+                    selectView:select_title="@string/setting_about_us" />
+
+                <View style="@style/cut_line_horizontal" />
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_recommend"
+                    style="@style/select_layout_notag"
+                    selectView:select_img="@drawable/icon_recommend"
+                    selectView:select_tag="@string/action_count"
+                    selectView:select_title="@string/setting_recommend_app" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/img_user_center_bg"
+                android:orientation="vertical" >
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_modify_pwd"
+                    style="@style/select_layout_notag"
+                    selectView:select_img="@drawable/icon_next"
+                    selectView:select_tag="@string/action_count"
+                    selectView:select_title="@string/setting_modify_pwd" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_login_out"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/img_user_center_bg"
+                android:gravity="center"
+                android:text="@string/setting_login_out"
+                android:textColor="#f65a56"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_tag"
+                style="@style/text_base"
+                android:textColor="@color/red"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="外网"
+                android:visibility="gone"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

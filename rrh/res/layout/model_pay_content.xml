@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_page_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/linear_edit_area"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/linear_edit_area_row" >
+
+            <TextView
+                style="@style/task_send_left_title"
+                android:drawableLeft="@null"
+                android:text="订单描述:" />
+
+            <TextView
+                android:id="@+id/tv_describe"
+                style="@style/task_send_right_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View style="@style/cut_line_horizontal" />
+
+        <LinearLayout style="@style/linear_edit_area_row" >
+
+            <TextView
+                style="@style/task_send_left_title"
+                android:drawableLeft="@null"
+                android:text="接单人:" />
+
+            <TextView
+                android:id="@+id/tv_reciver"
+                style="@style/task_send_right_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <View style="@style/cut_line_horizontal" />
+
+        <LinearLayout style="@style/linear_edit_area_row" >
+
+            <TextView
+                style="@style/task_send_left_title"
+                android:drawableLeft="@null"
+                android:text="支付金额:" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/task_send_right_content"
+                android:focusable="false"
+                android:textColor="@color/red"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <View style="@style/cut_line_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

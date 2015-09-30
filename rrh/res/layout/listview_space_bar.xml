@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cbkj.rrh.view.xlistview.XListView
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/xlv_sapce"
+   style="@style/common_listview"
+   android:dividerHeight="10dp"
+   android:divider="@color/transparent"
+   android:paddingLeft="10dp"
+   android:paddingRight="10dp"
+   />

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:selectView="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    xmlns:my_select_view="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/common_page_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/common_top_title_style" >
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/common_btn_back_style"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/common_tv_title_style"
+            android:text="我" />
+
+        <FrameLayout
+            android:id="@+id/fl_rignt"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_setting_selector" />
+
+            <ImageView
+                android:id="@+id/iv_rember_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:background="@drawable/icon_remenber_tip" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <include layout="@layout/item_top_namecard" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@drawable/img_user_center_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/select_layout_notag"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_me_work_select" />
+
+                    <TextView
+                        android:id="@+id/tv_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:text="私活提醒类型"
+                        android:textSize="17sp" />
+
+                    <include layout="@layout/model_work_position_bar" />
+                </LinearLayout>
+
+                <View style="@style/cut_line_horizontal" />
+
+                <com.cbkj.rrh.widget.MySelectItemView
+                    android:id="@+id/siv_apply_sign"
+                    style="@style/select_layout_notag"
+                    my_select_view:img_next="@drawable/icon_next"
+                    my_select_view:img_title="@drawable/icon_me_sign"
+                    my_select_view:text_title="@string/me_apply_recived_sign" />
+
+                <View style="@style/cut_line_horizontal" />
+
+                <com.cbkj.rrh.widget.MySelectItemView
+                    android:id="@+id/siv_alipay_account"
+                    style="@style/select_layout_notag"
+                    my_select_view:img_next="@drawable/icon_next"
+                    my_select_view:img_title="@drawable/icon_me_alipay"
+                    my_select_view:text_title="@string/me_alipay_account" />
+
+                <View style="@style/cut_line_horizontal" />
+
+                <include layout="@layout/model_certificate_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/img_user_center_bg"
+                android:orientation="vertical" >
+
+                <com.cbkj.rrh.widget.SelectItemView
+                    android:id="@+id/siv_score_self"
+                    style="@style/select_layout_notag"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    selectView:select_img="@drawable/icon_next"
+                    selectView:select_tag="@string/action_count"
+                    selectView:select_title="@string/me_score_self" />
+
+                 <include layout="@layout/model_comment_layout" />
+
+                <include layout="@layout/model_comment2_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

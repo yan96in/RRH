@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_user_center_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="支付宝账号："
+            android:textColor="#5c5c5c"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etv_alipay_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:background="@null" />
+    </LinearLayout>
+    
+    <TextView
+        android:text="为了保证您的收益，请正确填写支付宝账号"
+       style="@style/rember_tip_word"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/common_commit_btn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:onClick="submitAlipayNo"
+        android:text="保存" />
+
+</LinearLayout>

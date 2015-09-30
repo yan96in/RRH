@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cbkj.rrh"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- 百度定位 -->
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- <uses-permission android:name="android.permission.INSTALL_PACKAGES" /> -->
+
+
+    <!-- 添加可以向外拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 振动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 允许拍照权限 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- 摄像头功能 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 是否聚焦 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <!-- 视频录制的权限 -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:name="com.cbkj.rrh.system.BGApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:theme="@style/APPTheme" >
+        
+        
+<!--             <activity
+            android:name=".ui.PayActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxe28ecdff3da133cc"/>
+            </intent-filter>
+        </activity>  -->
+        
+        
+
+        <!-- 启动模块 -->
+          <activity
+            android:name=".ui.IndexActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppIndexTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>  
+        
+        
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.welcome.NavigateActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppIndexTheme" />
+
+        <!-- 首页模块 -->
+        <activity
+            android:name=".ui.home.TaskShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.TaskRecivedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+             />
+<!--             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"  -->
+
+        <!-- 消息模块 -->
+        <activity
+            android:name="com.cbkj.rrh.ui.order.OrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.order.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        
+         <activity
+            android:name="com.cbkj.rrh.ui.order.PayDetailActivity"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.cbkj.rrh.ui.order.PayTradeActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.cbkj.rrh.ui.order.OrderPayActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+             >
+           <!--  android:launchMode="singleTop" -->
+             <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxe28ecdff3da133cc"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.cbkj.rrh.ui.order.OrderReditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.push.PushMessageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 发布模块 -->
+        <activity
+            android:name=".ui.publish.TaskSendActivity"
+            android:screenOrientation="portrait"
+             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"  />
+
+        <!-- 我的模块 -->
+        <activity
+            android:name=".ui.me.MeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.user.PersonTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.me.user.ScoreEvaluateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.edit.ApproveReciverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.edit.CheckUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.edit.EditAlipayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.edit.EditSelfAssessmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.edit.EditUserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.me.edit.MyCerfiticateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.me.user.SentterNameCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.me.user.ReceiverNameCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.me.user.ReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.me.more.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.me.more.ServiceTermActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.me.more.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.me.more.UserGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.me.more.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.account.ModifyPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.account.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.account.AppProtocalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.account.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.account.ForgetPasswordNewPassWordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cbkj.rrh.ui.account.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- -选择照片 -->
+
+        <activity
+            android:name=".view.photoview.ImagePagerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.img.SelectPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.img.GalleryPhotoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 版本升级的服务 -->
+        <service
+            android:name="com.cbkj.rrh.utils.update.updateServicevice"
+            android:enabled="true"
+            android:label="@string/app_name" >
+        </service>
+        <!-- 裁剪相片 -->
+        <activity
+            android:name=".utils.pic.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 提交数据服务 -->
+        <service android:name=".service.CommitDataService" >
+            <intent-filter>
+                <action android:name="com.cbkj.rrh.service.COMMIT_DATA_SERVICE" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent1104820002" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- ###################添加UmengAppkey###################### -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55d5435fe0f55af7c6001779" />
+
+        <!-- ###################添加UmengApp Channel###################### -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="360" />
+        <!--
+        <meta-data android:name="UMENG_CHANNEL" android:value="offical" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="offical" />
+		<meta-data android:name="UMENG_CHANNEL" android:value="baidu" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="wandoujia" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="xiaomi" />
+
+        -->
+
+
+        <!-- 百度定位 -->
+        <!--
+            <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="TAu8tnBhnYuHCYSgIC0LfkD4" />
+        -->
+
+
+        <!-- 信鸽推送部分 -->
+
+
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2" >
+            <intent-filter android:priority="0x7fffffff" >
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!-- 【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处理 -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="true" >
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="" />
+            </intent-filter>
+        </activity>
+
+        <!-- 信鸽Receiver -->
+        <!-- YOUR_PACKAGE_PATH.CustomPushReceiver需要改为自己的Receiver： -->
+        <receiver android:name="com.cbkj.rrh.push.MessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+
+        <!-- 【必须】 通知service，此选项有助于提高抵达率 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.cbkj.rrh.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100138740" />
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A9BP895BU9QW" />
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- alipay sdk end -->
+
+		<!-- wxpay sdk begin -->
+
+        
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        
+
+      <!--   <receiver android:name="net.sourceforge.simcpux.AppRegister"> -->
+        <receiver android:name="com.cbkj.rrh.pay.wxpay.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+		<!-- wxpay sdk end -->
+
+
+    </application>
+
+</manifest>

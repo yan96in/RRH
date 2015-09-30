@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_certificate"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="15dp"
+     android:background="@drawable/img_user_center_bg"
+     >
+
+    <ImageView
+        android:id="@+id/iv_certificate_title_img"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_me_my_centrint"
+        android:visibility="gone"
+        android:layout_marginRight="5dp"
+         />
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        >
+          <TextView
+            android:id="@+id/tv_certificate_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="我是标题啊"
+            android:layout_marginRight="5dp"
+			android:textSize="17sp"            
+            />
+
+        <ImageView
+            android:id="@+id/iv_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/iv_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.5"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"/>
+        
+    </TableRow>
+
+      
+
+    <ImageView
+        android:id="@+id/iv_next_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/icon_next" />
+
+</LinearLayout>

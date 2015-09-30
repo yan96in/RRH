@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<include layout="@layout/title_bar"/>
+
+	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	        
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical"
+	            android:layout_marginTop="5dp"
+	            >
+	        
+
+	        <LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:background="@drawable/img_user_center_bg"	
+	            android:orientation="vertical" >
+
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="0dp"
+	                android:layout_weight="1"
+	                android:orientation="horizontal" >
+
+	            <ImageView
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:src="@drawable/icon_mobile" />
+
+	             <View style="@style/cut_line_vertical"/>
+	            
+	            
+	            <EditText
+	                android:id="@+id/login_et_account_number"
+	                style="@style/edittext_number"
+	                android:hint="请输入手机号" />
+	        </LinearLayout>
+	            
+	            <View  style="@style/cut_line_horizontal"
+	                />
+	            
+	             <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="0dp"
+	                android:layout_weight="1"
+	                android:orientation="horizontal" >
+	            <ImageView
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:src="@drawable/icon_lock" />
+	            
+	              <View style="@style/cut_line_vertical"/>
+	            
+
+	            <EditText
+	                android:id="@+id/login_et_password"
+	                style="@style/edittext_pwd"
+	                android:hint="请输入密码" />
+	            
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+
+
+	        <Button
+	            android:id="@+id/login_btn_login"
+	            style="@style/common_commit_btn"
+	            android:layout_marginLeft="30dp"
+	            android:layout_marginRight="30dp"
+	            android:layout_marginTop="25dp"
+	            android:text="登录" />
+	        
+	         <TextView
+	                android:id="@+id/tv_forget_password"
+	                style="@style/text_orange"
+	                android:layout_gravity="center_horizontal"
+	                android:layout_marginTop="25dp"
+	                android:layout_marginBottom="25dp"
+	                android:text="忘记密码  ?" />
+	        
+	          </LinearLayout>
+	        
+	        
+	       
+	    </LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

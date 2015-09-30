@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:radio_pay_view="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_page_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+	<include layout="@layout/model_pay_content"/>
+
+    <TextView
+        style="@style/text_common"
+        android:layout_margin="10dp"
+        android:text="选择支付方式"
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        style="@style/linear_edit_area"
+        android:orientation="vertical" >
+
+        <com.cbkj.rrh.view.PayRadioButton
+            android:id="@+id/pay_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            radio_pay_view:p_img="@drawable/icon_pay_alipay"
+            radio_pay_view:p_sub_title="@string/pay_alipay_title_sub"
+            radio_pay_view:p_title="@string/pay_alipay_title"
+             />
+
+        <View style="@style/cut_line_horizontal" />
+
+        <com.cbkj.rrh.view.PayRadioButton
+            android:id="@+id/pay_wxpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            radio_pay_view:p_img="@drawable/icon_pay_wxx"
+             radio_pay_view:p_sub_title="@string/pay_wx_title_sub"
+            radio_pay_view:p_title="@string/pay_wx_title" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_common"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="你将付款到我公司平台，任务确认完成后再确认付给接单人"
+        android:textColor="@color/gray"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/btn_common_style"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:text="确认支付" />
+
+</LinearLayout>

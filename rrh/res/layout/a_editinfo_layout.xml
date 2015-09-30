@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circleimg="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/title_bar"/>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="95dp"
+		        android:gravity="center"
+		        android:background="@drawable/img_user_center_bg">
+		        <FrameLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content">
+		
+		            <com.cbkj.rrh.view.RoundImageView
+			            android:id="@+id/riv_user"
+			            style="@style/user_img_big"
+			            android:layout_width="65dp"
+			            android:layout_height="65dp"
+			            android:layout_margin="5dp"
+			            android:background="@drawable/bg_user_head"
+			            circleimg:border_inside_color="@color/orange_little"
+           				circleimg:border_outside_color="@color/orange_little"
+          				circleimg:border_thickness="@dimen/user_img_border_thick"
+          				/>
+		        
+			        <ImageView 
+			            android:id="@+id/iv_photo"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/btn_photo_selector"
+			            android:layout_gravity="bottom|right"
+			            />
+		        </FrameLayout>
+		    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/img_user_center_bg"
+        >
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="45dp"
+		            android:orientation="horizontal"
+		            android:gravity="center_vertical"
+		            >
+			         <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="昵称："
+			            android:textSize="18sp"
+			            android:layout_marginLeft="20dp"
+			            android:textColor="#5c5c5c"
+			            /> 
+			            
+			         <com.cbkj.rrh.view.MyEditTextView
+			             android:id="@+id/etv_nick"
+			             android:layout_width="0dp"
+			             android:layout_weight="1"
+			             android:layout_height="match_parent"
+			             android:layout_marginLeft="20dp"
+			             android:background="@null"
+			             />
+		        </LinearLayout>
+        
+		        <View 
+		            style="@style/cut_line_horizontal"
+		            />
+
+		        		        
+			        <LinearLayout 
+			            android:layout_width="match_parent"
+			            android:layout_height="45dp"
+			            android:orientation="horizontal"
+			            android:gravity="center_vertical"
+			            >
+				         <TextView 
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="性别："
+				            android:textSize="18sp"
+				            android:layout_marginLeft="20dp"
+				            android:textColor="#5c5c5c"
+				            /> 
+				            
+				            
+ 				         <RadioGroup 
+				             android:id="@+id/rg_sex"
+				             android:layout_width="0dp"
+				             android:layout_weight="1"
+				             android:layout_marginLeft="30dp"
+				             android:layout_marginRight="30dp"
+				             android:layout_height="wrap_content"
+				             android:orientation="horizontal"
+				             > 
+				             <RadioButton 
+				                 android:id="@+id/rb_male"
+				                 style="@style/radioButton_style"
+				                 android:drawableRight="@drawable/icon_male"
+				                 android:checked="true"
+				                 android:layout_marginRight="40dp"
+				                 />
+				             
+				             <RadioButton 
+				                 android:id="@+id/rb_female"
+				                 style="@style/radioButton_style"
+				                 android:drawableRight="@drawable/icon_female"
+				                 />
+				             
+				          </RadioGroup> 
+				         
+			        </LinearLayout>
+			        
+	  			  </LinearLayout>
+			        <Button
+	            android:id="@+id/btn_save"
+	            style="@style/common_commit_btn"
+	            android:layout_marginLeft="30dp"
+	            android:layout_marginRight="30dp"
+	            android:layout_marginTop="25dp"
+	            android:text="保存" />
+
+	  </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+

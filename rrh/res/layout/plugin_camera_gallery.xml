@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/albumback"
+    android:orientation="vertical"
+    >
+	<include layout="@layout/title_bar"/>
+    
+    <com.cbkj.rrh.view.img.ViewPagerFixed
+      android:id="@+id/gallery01" 
+      android:layout_width="fill_parent" 
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:background="@color/plugin_camera_black"
+      android:unselectedAlpha="1"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_main_tab"
+        android:visibility="gone"
+         >
+        
+         <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_sign_selector"
+            android:text="完成" />
+        
+    </RelativeLayout>
+   
+</LinearLayout>
+  

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    
+	    <!-- 内容类公共模块 -->
+	 <string name="system_un_login">请先登录</string>    
+	 <string name="system_error"></string>    
+	 <string name="content_title">标题：%s</string>    
+	 <string name="content_nick">昵称：%s</string>    
+	 <string name="content_content">%s</string>    
+	 <string name="content_publish_tip">提示：您的投稿经过萌友审核后才能发表成功</string>    
+	 <string name="content_upload_video_tip">每次只能上传一个视频</string>    
+	 <string name="content_upload_pic_tip">一次性最多上传8张图片</string>    
+    
+    <string name="agree_user_protocal">同意啦啦私活用户使用协议</string>
+    <string name="authcode_get_code">获取验证码</string>
+    <string name="authcode_wait_code">获取验证码(%1$s)</string>
+    
+    
+    <!-- 关于App -->
+    <string name="app_channel">offical</string>
+    <string name="app_name">啦啦私活</string>
+    <string name="app_version">"邦固科技 版权所有"%s</string>
+    
+     <string name="relation_name">""</string>
+     <string name="main_title_home">首页</string>
+     <string name="main_title_message">订单 </string>
+     <string name="main_title_publish">发布</string>
+     <string name="main_title_me">我</string>
+     
+     
+     
+     <string name="reward_money">打赏你%1$s个萌币</string>
+     <string name="show_money">%1$s萌币</string>
+     
+     
+     
+     <!-- 设置模块 -->
+     <string name="setting_title">设置</string>
+     <string name="setting_get_money">获取萌币途径</string>
+     <string name="setting_switch_push">允许推送私活</string>
+     <string name="setting_contact_service">联系客服</string>
+     <string name="setting_help">使用指南</string>
+     <string name="setting_service_terms">服务条款</string>
+     <string name="setting_feedback">意见反馈</string>
+     <string name="setting_common_score">应用评分</string>
+     <string name="setting_check_version">版本更新</string>
+     <string name="setting_clear_cache">清理缓存</string>
+     <string name="setting_clear_tag">清理缓存</string>
+     <string name="setting_play_gif">GIF自动播放</string>
+     <string name="setting_about_us">关于啦啦私活</string>
+     <string name="setting_recommend_app">推荐给好友</string>
+     <string name="setting_modify_pwd">修改密码</string>
+     <string name="setting_login_out">退出登录</string>
+     
+     <string name="setting_share_wx">微信</string>
+     <string name="setting_share_circle">朋友圈</string>
+     <string name="setting_share_qq">QQ</string>
+     <string name="setting_share_qzone">QQ空间</string>
+     <string name="setting_share_sina">微博</string>
+    
+     
+     <!-- 图片 -->
+     <string name="publish_take_video">拍视频</string>
+     <string name="publish_take_pic">拍照片</string>
+     <string name="publish_local_upload">本地上传</string>
+     
+      <string name="word_get_money">&#160;1.首次注册获得70萌币\n
+									2.首次完善资料获得5萌币\n
+									3.每次分享获得2萌币\n
+									4.每次评论获得1萌币\n
+									5.每次发表图片获得3萌币\n
+									6.每次发表视频获得5萌币\n
+									7.每次点赞获得1萌币\n
+									8.每天登录获得1萌币\n
+									9.每天签到获得1萌币\n
+									10.打赏按打赏萌币数扣除萌币\n\n
+									萌币用途，敬请期待。
+      </string>
+      
+      
+        <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    
+    <string name="finish">完成(%1$d/%2$d)</string>
+    <string name="show_pic">%1$d/%2$d</string>
+    
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string> 
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+     
+     
+</resources>

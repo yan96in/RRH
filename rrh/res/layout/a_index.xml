@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+     >
+     
+    
+    <RelativeLayout 
+        android:id="@+id/rl_account_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginBottom="100dp"
+        >
+        <Button 
+            android:id="@+id/btn_register"
+            style="@style/btn_common_style"
+            android:background="@drawable/btn_register_bg"
+            android:text="注  册"
+            android:textColor="@color/white"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="18sp"
+            />
+        
+                <Button 
+            android:id="@+id/btn_login"
+            style="@style/btn_common_style"
+            android:background="@drawable/btn_login_bg"
+            android:text="登  录"
+            android:textColor="@color/orange_little"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="18sp"
+            />
+        
+    </RelativeLayout>
+    
+    
+    
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+    <LinearLayout 
+        android:id="@+id/ll_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        >
+    
+        <ImageView
+	        android:id="@+id/iv_img"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="6dp"
+	        android:background="@drawable/icon_app"
+        />
+    
+	    <TextView
+	        android:id="@+id/tv_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="2dp"
+	        android:textColor="@color/color_home_radiobutton_text"
+	        android:singleLine="true"
+	        android:text="联系"
+	        android:ellipsize="end"
+	        />
+    </LinearLayout>
+        
+     <TextView
+         android:id="@+id/tv_tip"
+         android:layout_toRightOf="@id/ll_show"
+         style="@style/tip_red"
+         android:visibility="gone"
+         />
+     
+       <ImageView
+         android:id="@+id/iv_rember_tip"
+         android:layout_toRightOf="@id/ll_show"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/icon_remenber_tip"
+         android:layout_marginTop="10dp"
+         android:visibility="gone"
+         />
+     
+
+</RelativeLayout>

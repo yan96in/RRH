@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:thirdbar="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_user_center_bg"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/bg_share_recommend" -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow android:layout_marginTop="25dp" >
+
+            <com.cbkj.rrh.view.ImgWordView
+                android:id="@+id/iw_share_sina"
+                style="@style/btn_third_style"
+                thirdbar:t_img="@drawable/btn_weibo_selector"
+                thirdbar:t_text="@string/setting_share_sina" />
+
+            <com.cbkj.rrh.view.ImgWordView
+                android:id="@+id/iw_share_circle"
+                style="@style/btn_third_style"
+                thirdbar:t_img="@drawable/btn_circle_selector"
+                thirdbar:t_text="@string/setting_share_circle" />
+
+            <com.cbkj.rrh.view.ImgWordView
+                android:id="@+id/iw_share_qzone"
+                style="@style/btn_third_style"
+                thirdbar:t_img="@drawable/btn_qzone_selector"
+                thirdbar:t_text="@string/setting_share_qzone" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="25dp" >
+
+            <com.cbkj.rrh.view.ImgWordView
+                android:id="@+id/iw_share_wx"
+                style="@style/btn_third_style"
+                thirdbar:t_img="@drawable/btn_wx_selector"
+                thirdbar:t_text="@string/setting_share_wx" />
+
+            <com.cbkj.rrh.view.ImgWordView
+                android:id="@+id/iw_share_qq"
+                style="@style/btn_third_style"
+                thirdbar:t_img="@drawable/btn_qq_selector"
+                thirdbar:t_text="@string/setting_share_qq" />
+
+            <com.cbkj.rrh.view.ImgWordView
+                style="@style/btn_third_style"
+                android:visibility="invisible"
+                thirdbar:t_img="@drawable/btn_circle_selector"
+                thirdbar:t_text="@string/setting_share_circle" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_cancel_selector"
+            android:gravity="center"
+            android:text="取 消"
+            android:textColor="#5c5c5c"
+            android:textSize="24sp" />
+    </TableLayout>
+
+</FrameLayout>

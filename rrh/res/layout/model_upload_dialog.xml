@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:thirdbar="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_user_center_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <com.cbkj.rrh.view.ImgWordView
+            android:id="@+id/iw_first"
+            style="@style/btn_third_style"
+            thirdbar:t_img="@drawable/btn_camera_selector"
+            thirdbar:t_text="@string/setting_share_wx" />
+
+        <com.cbkj.rrh.view.ImgWordView
+            android:id="@+id/iw_second"
+            style="@style/btn_third_style"
+            thirdbar:t_img="@drawable/btn_upload_file_selector"
+            thirdbar:t_text="@string/setting_share_qq" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_cancel_selector"
+        android:gravity="center"
+        android:text="取 消"
+        android:textColor="#5c5c5c"
+        android:textSize="24sp" />
+
+</LinearLayout>

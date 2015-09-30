@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_page_bg"
+    android:orientation="vertical" >
+
+   <include layout="@layout/title_bar"/>
+
+   <FrameLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+       >
+     <RadioGroup
+	        android:id="@+id/radio_group"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:orientation="horizontal"
+	        android:divider="@drawable/img_common_ll_divider"
+      		android:showDividers="middle"
+	         >
+
+	        <RadioButton
+	            android:id="@+id/radio_01"
+	            style="@style/xuanneng_tab_text"
+	            android:text="关注" />
+
+	        <RadioButton
+	            android:id="@+id/radio_02"
+	            style="@style/xuanneng_tab_text"
+	            android:text="粉丝" />
+	        
+	    </RadioGroup>
+	    
+	     	<LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_gravity="bottom">
+				    <ImageView 
+				        android:id="@+id/img_01"
+				        style="@style/tab_tag"
+				        android:visibility="visible"
+				        />
+				    <ImageView 
+				        android:id="@+id/img_02"
+				        style="@style/tab_tag"
+				        />
+		  
+		    </LinearLayout> 
+	    </FrameLayout>  
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_friend_ship"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_margin="7dp"
+        android:background="@color/white" />
+            
+</LinearLayout>

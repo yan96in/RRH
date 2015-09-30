@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:markimgbar="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@color/white" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+        
+        
+         <LinearLayout 
+       		android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_main_tab2"
+            android:orientation="horizontal">
+      
+        
+          <com.cbkj.rrh.view.MarkImgRadioButton
+				android:id="@+id/main_tab_home"
+				style="@style/radio_tab_style"
+				markimgbar:mibicon="@drawable/btn_home_selector"
+				markimgbar:mibkname="@string/main_title_home"
+				markimgbar:mibkcount="@string/main_title_count"
+      		/>
+          
+            <com.cbkj.rrh.view.MarkImgRadioButton
+				android:id="@+id/main_tab_message"
+				style="@style/radio_tab_style"
+				markimgbar:mibicon="@drawable/btn_order_selector"
+				markimgbar:mibkname="@string/main_title_message"
+				markimgbar:mibkcount="@string/main_title_count"
+     		 />
+            
+          <com.cbkj.rrh.view.MarkImgRadioButton
+				android:id="@+id/main_tab_publish"
+				style="@style/radio_tab_style"
+				markimgbar:mibicon="@drawable/btn_release_selector"
+				markimgbar:mibkname="@string/main_title_publish"
+				markimgbar:mibkcount="@string/main_title_count"
+     		/>
+            
+             <com.cbkj.rrh.view.MarkImgRadioButton
+				android:id="@+id/main_tab_me"
+				style="@style/radio_tab_style"
+				markimgbar:mibicon="@drawable/btn_preson_center_selector"
+				markimgbar:mibkname="@string/main_title_me"
+				markimgbar:mibkcount="@string/main_title_count"
+     		/>
+  </LinearLayout>
+        
+    </LinearLayout>
+
+</TabHost>

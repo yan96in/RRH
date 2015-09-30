@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+     >
+
+        <LinearLayout style="@style/linear_text_area_row" >
+
+        <TextView
+            style="@style/task_send_left_title"
+            android:drawableLeft="@null"
+            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:text="订单编号:" 
+            />
+
+        <TextView
+            android:id="@+id/tv_task_id"
+            style="@style/task_show_content"
+             />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/linear_text_area_row" >
+
+        <TextView
+            style="@style/task_send_left_title"
+            android:drawableLeft="@null"
+            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:text="任务描述:" 
+            />
+
+        <TextView
+            android:id="@+id/tv_describe"
+            style="@style/task_show_content"
+             />
+    </LinearLayout>
+
+    <LinearLayout style="@style/linear_text_area_row" >
+
+        <TextView
+            style="@style/task_send_left_title"
+            android:drawableLeft="@null"
+            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:text="联  系  人:" />
+
+        <TextView
+            android:id="@+id/tv_contact"
+             style="@style/task_show_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout style="@style/linear_text_area_row" >
+
+        <TextView
+            style="@style/task_send_left_title"
+            android:drawableLeft="@null"
+            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:text="手        机:" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+             style="@style/task_show_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout style="@style/linear_text_area_row" >
+
+        <TextView
+            style="@style/task_send_left_title"
+            android:drawableLeft="@null"
+            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:text="联系地址:" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/task_show_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_user_center_bg"
+        android:divider="@drawable/img_common_ll_divider"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/tv_deadline"
+            style="@style/text_time_frame"
+            android:background="@null"
+            android:text="剩余时间" />
+
+        <TextView
+            android:id="@+id/tv_finishTime"
+            style="@style/text_time_frame"
+            android:layout_alignParentRight="true"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circleimg="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_task_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_task_status_success"
+        android:visibility="gone" />
+
+    <com.cbkj.rrh.view.RoundImageView
+        android:id="@+id/riv_user"
+        android:layout_width="@dimen/user_img_small_width"
+        android:layout_height="@dimen/user_img_small_width"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_user_head"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_app"
+        circleimg:border_inside_color="@color/orange_little"
+        circleimg:border_outside_color="@color/orange_little"
+        circleimg:border_thickness="@dimen/user_img_border_thick" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/text_name"
+        android:textSize="15sp"
+        android:textColor="#5c5c5c"
+        android:layout_alignTop="@id/riv_user"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/riv_user"
+        android:text="小毛驴" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/text_date"
+        android:layout_alignBottom="@id/riv_user"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@id/riv_user"
+        android:text="8-7"
+        android:textColor="#b8b8b8"
+        android:textSize="11.5sp" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        style="@style/text_base"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_task_price"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="100" />
+
+</RelativeLayout>

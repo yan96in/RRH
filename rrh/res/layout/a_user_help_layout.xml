@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_page_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/img_user_center_bg"
+            android:divider="@drawable/img_common_ll_divider"
+            android:orientation="horizontal"
+            android:showDividers="middle" >
+
+            <RadioButton
+                android:id="@+id/radio_01"
+                style="@style/xuanneng_tab_text"
+                android:checked="true"
+                android:text="接单人" />
+
+            <RadioButton
+                android:id="@+id/radio_02"
+                style="@style/xuanneng_tab_text"
+                android:text="雇主" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_01"
+                style="@style/tab_tag"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/img_02"
+                style="@style/tab_tag" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/iv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/bg_no_content"
+            android:visibility="gone" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_publish_type_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" />
+    </RelativeLayout>
+
+</LinearLayout>

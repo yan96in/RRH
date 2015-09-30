@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_page_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <ScrollView
+        android:id="@+id/scroll_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/linear_edit_area_row"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_user_center_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/task_send_left_title"
+                    android:text="@string/send_task_type"
+                    android:textSize="17sp" />
+
+                <include layout="@layout/model_work_position_bar" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_edit_area"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout style="@style/linear_edit_area_row" >
+
+                    <TextView
+                        style="@style/task_send_left_title"
+                        android:text="@string/send_task_description" />
+
+                    <EditText
+                        android:id="@+id/et_describe"
+                        style="@style/task_send_right_content"
+                        android:layout_height="140dp"
+                        android:gravity="top"
+                        android:hint="简单描述下私活内容" />
+                </LinearLayout>
+
+                <View style="@style/cut_line_horizontal" />
+
+                <LinearLayout style="@style/linear_edit_area_row" >
+
+                    <TextView
+                        style="@style/task_send_left_title"
+                        android:text="@string/send_task_reward" />
+
+                    <EditText
+                        android:id="@+id/et_money"
+                        style="@style/task_send_right_content"
+                        android:hint="请输入金额"
+                        android:inputType="number" />
+
+                    <TextView
+                        style="@style/text_common"
+                        android:layout_marginRight="50dp"
+                        android:text="元" />
+                </LinearLayout>
+
+                <View style="@style/cut_line_horizontal" />
+
+                <LinearLayout style="@style/linear_edit_area_row" >
+
+                    <TextView
+                        style="@style/task_send_left_title"
+                        android:text="@string/send_task_dateline" />
+
+                    <EditText
+                        android:id="@+id/et_enddate"
+                        style="@style/task_send_right_content"
+                        android:focusable="false"
+                        android:hint="请输入任务完成日" />
+                </LinearLayout>
+
+                <View style="@style/cut_line_horizontal" />
+
+                <LinearLayout style="@style/linear_edit_area_row" >
+
+                    <TextView
+                        style="@style/task_send_left_title"
+                        android:text="@string/send_task_finishTime" />
+
+                    <EditText
+                        android:id="@+id/et_finishtime"
+                        style="@style/task_send_right_content"
+                        android:focusable="false"
+                        android:hint="请输入招标截止日" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_edit_area"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout style="@style/linear_edit_area_row" >
+
+                    <TextView
+                        style="@style/task_send_left_title"
+                        android:text="@string/send_task_contact" />
+
+                    <EditText
+                        android:id="@+id/et_contact"
+                        style="@style/task_send_right_content"
+                        android:hint="请填写联系人的姓名"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <View style="@style/cut_line_horizontal" />
+
+                <LinearLayout style="@style/linear_edit_area_row" >
+
+                    <TextView
+                        style="@style/task_send_left_title"
+                        android:text="@string/send_task_tel" />
+
+                    <EditText
+                        android:id="@+id/et_tel"
+                        style="@style/task_send_right_content"
+                        android:inputType="phone" />
+                </LinearLayout>
+
+                <View style="@style/cut_line_horizontal" />
+
+                <LinearLayout style="@style/linear_edit_area_row" >
+
+                    <TextView
+                        style="@style/task_send_left_title"
+                        android:drawableLeft="@null"
+                        android:text="@string/send_task_address" />
+
+                    <EditText
+                        android:id="@+id/et_address"
+                        style="@style/task_send_right_content"
+                        android:layout_height="85dp"
+                        android:hint="请输入您的联系地址" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_send"
+                style="@style/btn_common_style"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_send_selector"
+                android:text="@string/send_task_ok"
+                android:textColor="@color/orange_little" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

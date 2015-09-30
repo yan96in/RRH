@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_user_center_bg"
+     >
+
+    <TextView 
+        android:id="@+id/tv_trade_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/icon_trade_money_enter"
+        android:text="+100"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/linear_edit_area_row"
+           			  android:layout_height="40dp">
+
+            <TextView
+                style="@style/task_trade_left_title"
+                android:drawableLeft="@null"
+                android:text="@string/order_trade_id" />
+
+            <TextView
+                android:id="@+id/tv_trade_id"
+                style="@style/task_trade_right_title" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_edit_area_row" 
+           			  android:layout_height="40dp">
+            <TextView
+                style="@style/task_trade_left_title"
+                android:drawableLeft="@null"
+                android:text="@string/order_trade_way" />
+
+            <TextView
+                android:id="@+id/tv_trade_way"
+                style="@style/task_trade_right_title" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_edit_area_row" 
+           			  android:layout_height="40dp">
+            <TextView
+                style="@style/task_trade_left_title"
+                android:drawableLeft="@null"
+                android:text="@string/order_trade_money" />
+
+            <TextView
+                android:id="@+id/tv_trade_money"
+                style="@style/task_trade_right_title" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_edit_area_row" 
+           			  android:layout_height="40dp">
+
+            <TextView
+                style="@style/task_trade_left_title"
+                android:drawableLeft="@null"
+                android:text="@string/order_trade_time" />
+
+            <TextView
+                android:id="@+id/tv_trade_time"
+                style="@style/task_trade_right_title" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_edit_area_row" 
+           			  android:layout_height="wrap_content"
+           			  android:minHeight="40dp">
+
+            <TextView
+                style="@style/task_trade_left_title"
+                android:drawableLeft="@null"
+                android:text="@string/order_trade_reason" />
+
+            <TextView
+                android:id="@+id/tv_trade_reason"
+                style="@style/task_trade_right_title"
+                android:text="我是一个捌埋藏桂圆夺框图进苦地埋时时法叶喹叶s"
+                
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

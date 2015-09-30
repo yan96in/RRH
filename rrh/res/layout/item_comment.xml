@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+         <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            >
+		        <com.cbkj.rrh.view.RoundImageView
+		            android:id="@+id/riv_user"
+		            android:layout_width="@dimen/user_img_small_width"
+		            android:layout_height="@dimen/user_img_small_width"
+		            android:layout_marginRight="10dp"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/icon_app" />
+		
+		        <TextView
+		            android:id="@+id/tv_name"
+		            style="@style/text_name"
+		            android:layout_alignTop="@id/riv_user"
+		            android:layout_marginTop="2dp"
+		            android:layout_toRightOf="@id/riv_user"
+		            android:text="小毛驴"/>
+		
+		        <TextView
+		            android:id="@+id/tv_date"
+		            style="@style/text_date"
+		            android:layout_alignBottom="@id/riv_user"
+		            android:layout_marginBottom="2dp"
+		            android:layout_toRightOf="@id/riv_user"
+		            android:textSize="10sp"
+		            android:text="8-7"/>
+		</RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        android:text="内容"
+        style="@style/item_content"
+        android:layout_margin="10dp"
+        />
+
+
+</LinearLayout>
