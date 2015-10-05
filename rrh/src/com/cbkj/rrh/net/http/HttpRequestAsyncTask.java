@@ -8,8 +8,8 @@ import android.content.Context;
 import android.os.AsyncTask;
 
 import com.cbkj.rrh.net.http.HttpResponse.HttpTaskState;
-import com.cbkj.rrh.utils.ConfigUtil;
-import com.cbkj.rrh.utils.LogUtils;
+import com.cbkj.rrh.others.utils.ConfigUtil;
+import com.cbkj.rrh.others.utils.LogUtils;
 import com.cbkj.rrh.view.BToast;
 import com.cbkj.rrh.view.LoadingProgress;
 

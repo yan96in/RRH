@@ -12,8 +12,9 @@ import android.widget.ImageView;
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.FileBean;
 import com.cbkj.rrh.bean.ImageBean;
-import com.cbkj.rrh.system.BGApp;
-import com.cbkj.rrh.system.Const;
+import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.Const;
+import com.cbkj.rrh.main.base.KBaseAdapter;
 /***
  * @todo:图片适配器
  * @date:2014-11-10 下午6:00:55

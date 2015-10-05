@@ -218,7 +218,7 @@ public class PreferenceUtil {
 	
 	
 	/**获取用户UserID*/
-	public void setUserID(String userId){
+	private void setUserID(String userId){
 		editor.putString("user_id", userId);
 		editor.commit();
 	}
@@ -376,17 +376,16 @@ public class PreferenceUtil {
 	
 	/**存放用户信息,以对象的形式存放*/
 	public void setUserBean(UserBean userBean){
+		if (null == userBean) {
+			return;
+		}
 		////把userbean对象转化成字符串，然后保存起来
+		setUserID(userBean.userId);
 		String userInfo = JSON.toJSONString(userBean);
 		editor.putString("userInfo", userInfo);
 		editor.commit();
 	}
-	
-	/**存放用户信息*/
-	public void setUserBean(String userInfo){
-		editor.putString("userInfo", userInfo);
-		editor.commit();
-	}
+
 	
 	/**获取用户信息*/
 	public UserBean getUserBean(){

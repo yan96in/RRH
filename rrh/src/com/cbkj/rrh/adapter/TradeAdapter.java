@@ -9,7 +9,8 @@ import android.widget.TextView;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.TradeBean;
-import com.cbkj.rrh.utils.ToolUtils;
+import com.cbkj.rrh.main.base.KBaseAdapter;
+import com.cbkj.rrh.others.utils.ToolUtils;
 
 /**
  * @todo:交易适配
@@ -28,13 +29,13 @@ public class TradeAdapter extends KBaseAdapter {
 		
 		if (null == convertView) {
 			vHolder = new ViewHolder();
-			convertView = mInflater.inflate(R.layout.item_trade_layout, parent, false);
-			vHolder.tvID = (TextView) convertView.findViewById(R.id.tv_trade_id);
-			vHolder.tvWay = (TextView) convertView.findViewById(R.id.tv_trade_way);
-			vHolder.tvMoney = (TextView) convertView.findViewById(R.id.tv_trade_money);
-			vHolder.tvTime = (TextView) convertView.findViewById(R.id.tv_trade_time);
-			vHolder.tvReason = (TextView) convertView.findViewById(R.id.tv_trade_reason);
-			vHolder.tvStatus = (TextView) convertView.findViewById(R.id.tv_trade_status);
+//			convertView = mInflater.inflate(R.layout.item_trade_layout, parent, false);
+//			vHolder.tvID = (TextView) convertView.findViewById(R.id.tv_trade_id);
+//			vHolder.tvWay = (TextView) convertView.findViewById(R.id.tv_trade_way);
+//			vHolder.tvMoney = (TextView) convertView.findViewById(R.id.tv_trade_money);
+//			vHolder.tvTime = (TextView) convertView.findViewById(R.id.tv_trade_time);
+//			vHolder.tvReason = (TextView) convertView.findViewById(R.id.tv_trade_reason);
+//			vHolder.tvStatus = (TextView) convertView.findViewById(R.id.tv_trade_status);
 			convertView.setTag(vHolder);
 		} else {
 			vHolder = (ViewHolder) convertView.getTag();

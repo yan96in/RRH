@@ -15,14 +15,10 @@
         android:targetSdkVersion="19" />
 
     <!-- 百度定位 -->
-    <!-- 允许应用读取低级别的系统日志文件 -->
-    
+
     <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-    <!-- <uses-permission android:name="android.permission.INSTALL_PACKAGES" /> -->
-
 
     <!-- 添加可以向外拨打电话的权限 -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -70,187 +66,141 @@
         android:icon="@drawable/icon_app"
         android:label="@string/app_name"
         android:theme="@style/APPTheme" >
-        
-        
-<!--             <activity
-            android:name=".ui.PayActivity"
-            android:label="@string/app_name"
-            android:exported="true"
-            android:launchMode="singleTop">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:scheme="wxe28ecdff3da133cc"/>
-            </intent-filter>
-        </activity>  -->
-        
-        
 
         <!-- 启动模块 -->
-          <activity
-            android:name=".ui.IndexActivity"
+        <activity
+            android:name="com.cbkj.rrh.main.IndexActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppIndexTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>  
+        </activity>
         
-        
+        <!-- 通用部分 -->
         <activity
-            android:name=".ui.MainActivity"
+            android:name="com.cbkj.rrh.main.MainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ui.welcome.NavigateActivity"
+            android:name="com.cbkj.rrh.main.welcome.NavigateActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/AppIndexTheme" />
+        
+        
+        
+        
 
-        <!-- 首页模块 -->
-        <activity
-            android:name=".ui.home.TaskShowActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.home.TaskRecivedActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" 
-             />
-<!--             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"  -->
-
-        <!-- 消息模块 -->
-        <activity
-            android:name="com.cbkj.rrh.ui.order.OrderActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.cbkj.rrh.ui.order.OrderDetailActivity"
-            android:screenOrientation="portrait" />
+       
+        <!-- 首页 -->
         
          <activity
-            android:name="com.cbkj.rrh.ui.order.PayDetailActivity"
+            android:name="com.cbkj.rrh.home.view.HomeShowActivity"
             android:screenOrientation="portrait" />
+         
+        <!-- 社交 -->
          <activity
-            android:name="com.cbkj.rrh.ui.order.PayTradeActivity"
+            android:name="com.cbkj.rrh.social.view.SocialShowActivity"
             android:screenOrientation="portrait" />
-        
-        <activity
-            android:name="com.cbkj.rrh.ui.order.OrderPayActivity"
-            android:screenOrientation="portrait"
-            android:exported="true"
-             >
-           <!--  android:launchMode="singleTop" -->
-             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:scheme="wxe28ecdff3da133cc"/>
-            </intent-filter>
-        </activity>
-        
-        <activity
-            android:name="com.cbkj.rrh.ui.order.OrderReditActivity"
+         
+        <!-- 风采  -->
+         <activity
+            android:name="com.cbkj.rrh.miem.view.MiemShowActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name="com.cbkj.rrh.push.PushMessageActivity"
+         
+        <!-- 发现 -->
+         <activity
+            android:name="com.cbkj.rrh.discover.view.DiscoverShowActivity"
             android:screenOrientation="portrait" />
-
-        <!-- 发布模块 -->
-        <activity
-            android:name=".ui.publish.TaskSendActivity"
-            android:screenOrientation="portrait"
-             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"  />
-
+         
         <!-- 我的模块 -->
         <activity
-            android:name=".ui.me.MeActivity"
+            android:name="com.cbkj.rrh.me.view.MeActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".me.user.PersonTaskActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.me.user.PersonTaskActivity"
+            android:name="com.cbkj.rrh.me.user.ScoreEvaluateActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.me.user.ScoreEvaluateActivity"
+            android:name=".me.edit.ApproveReciverActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.me.edit.ApproveReciverActivity"
+            android:name=".me.edit.CheckUserActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.me.edit.CheckUserActivity"
+            android:name=".me.edit.EditAlipayActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.me.edit.EditAlipayActivity"
+            android:name=".me.edit.EditSelfAssessmentActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.me.edit.EditSelfAssessmentActivity"
+            android:name=".me.edit.EditUserInfoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.me.edit.EditUserInfoActivity"
+            android:name=".me.edit.MyCerfiticateActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.me.edit.MyCerfiticateActivity"
+            android:name="com.cbkj.rrh.me.user.SentterNameCardActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.me.user.SentterNameCardActivity"
+            android:name="com.cbkj.rrh.me.user.ReceiverNameCardActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.me.user.ReceiverNameCardActivity"
+            android:name="com.cbkj.rrh.me.user.ReportActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.me.user.ReportActivity"
+            android:name="com.cbkj.rrh.me.more.SettingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.me.more.SettingActivity"
+            android:name="com.cbkj.rrh.me.more.ServiceTermActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.me.more.ServiceTermActivity"
+            android:name="com.cbkj.rrh.me.more.AboutUsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.me.more.AboutUsActivity"
+            android:name="com.cbkj.rrh.me.more.UserGuideActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.me.more.UserGuideActivity"
+            android:name="com.cbkj.rrh.me.more.FeedbackActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.me.more.FeedbackActivity"
+            android:name="com.cbkj.rrh.main.account.ModifyPasswordActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.account.ModifyPasswordActivity"
+            android:name="com.cbkj.rrh.main.account.LoginActivityty"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.account.LoginActivity"
+            android:name="com.cbkj.rrh.main.account.AppProtocalActivityvity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.account.AppProtocalActivity"
+            android:name="com.cbkj.rrh.main.account.ForgetPasswordActivityty"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.account.ForgetPasswordActivity"
+            android:name="com.cbkj.rrh.main.account.ForgetPasswordNewPassWordActivityActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cbkj.rrh.ui.account.ForgetPasswordNewPassWordActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.cbkj.rrh.ui.account.RegisterActivity"
+            android:name="com.cbkj.rrh.main.account.RegisterActivitytivity"
             android:screenOrientation="portrait" />
 
         <!-- -选择照片 -->
 
         <activity
-            android:name=".view.photoview.ImagePagerActivity"
+            android:name="com.cbkj.rrh.view.photoview.ImagePagerActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.img.SelectPhotoActivity"
+            android:name="com.cbkj.rrh.view.img.SelectPhotoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.img.GalleryPhotoActivity"
+            android:name="com.cbkj.rrh.view.img.GalleryPhotoActivity"
             android:screenOrientation="portrait" />
 
         <!-- 版本升级的服务 -->
@@ -261,17 +211,15 @@
         </service>
         <!-- 裁剪相片 -->
         <activity
-            android:name=".utils.pic.CropImageActivity"
+            android:name="updateServicevice.utils.pic.CropImageActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
 
-        <!-- 提交数据服务 -->
-        <service android:name=".service.CommitDataService" >
-            <intent-filter>
-                <action android:name="com.cbkj.rrh.service.COMMIT_DATA_SERVICE" >
-                </action>
-            </intent-filter>
-        </service>
+        
+        
+         <!-- ###################################################第三方支持############################################################## -->
+        
+        
 
         <!-- ###################注册SDK使用的Activity###################### -->
         <!-- 分享编辑页 -->
@@ -325,7 +273,6 @@
 		<meta-data android:name="UMENG_CHANNEL" android:value="baidu" />
         <meta-data android:name="UMENG_CHANNEL" android:value="wandoujia" />
         <meta-data android:name="UMENG_CHANNEL" android:value="xiaomi" />
-
         -->
 
 
@@ -420,33 +367,6 @@
             android:name="XG_V2_ACCESS_KEY"
             android:value="A9BP895BU9QW" />
 
-        <!-- alipay sdk begin -->
-        <activity
-            android:name="com.alipay.sdk.app.H5PayActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:exported="false"
-            android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden" >
-        </activity>
-
-        <!-- alipay sdk end -->
-
-		<!-- wxpay sdk begin -->
-
-        
-        <activity
-            android:name=".wxapi.WXPayEntryActivity"
-            android:exported="true"
-            android:launchMode="singleTop"/>
-        
-
-      <!--   <receiver android:name="net.sourceforge.simcpux.AppRegister"> -->
-        <receiver android:name="com.cbkj.rrh.pay.wxpay.AppRegister">
-            <intent-filter>
-                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
-            </intent-filter>
-        </receiver>
-		<!-- wxpay sdk end -->
 
 
     </application>

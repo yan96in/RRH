@@ -38,10 +38,10 @@ import android.widget.Toast;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.FileBean;
-import com.cbkj.rrh.ui.base.BaseActivity;
-import com.cbkj.rrh.utils.ImgUtils;
+import com.cbkj.rrh.main.base.BaseActivity;
+import com.cbkj.rrh.others.utils.ImgUtils;
 import com.cbkj.rrh.view.img.GridItemAdapter.OnPhotoSelectedListener;
-import com.cbkj.rrh.widget.TitleBar;
+import com.cbkj.rrh.view.widget.TitleBar;
 /**
  * 
  * @todo:图片选择

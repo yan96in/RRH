@@ -23,15 +23,15 @@ import com.cbkj.rrh.R;
 import com.cbkj.rrh.adapter.WorkPositionAdapter;
 import com.cbkj.rrh.bean.WorkBean;
 import com.cbkj.rrh.db.PreferenceUtil;
+import com.cbkj.rrh.main.BGApp;
 import com.cbkj.rrh.net.http.HttpRequest;
 import com.cbkj.rrh.net.http.HttpRequestAsyncTask.TaskListenerWithState;
 import com.cbkj.rrh.net.http.HttpResponse;
 import com.cbkj.rrh.net.http.HttpResponse.HttpTaskState;
 import com.cbkj.rrh.net.http.HttpURL;
 import com.cbkj.rrh.net.request.UserRequest;
-import com.cbkj.rrh.system.BGApp;
-import com.cbkj.rrh.utils.ConfigUtil;
-import com.cbkj.rrh.utils.DeviceUtils;
+import com.cbkj.rrh.others.utils.ConfigUtil;
+import com.cbkj.rrh.others.utils.DeviceUtils;
 
 /**
  * 

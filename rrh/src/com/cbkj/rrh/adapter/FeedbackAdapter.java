@@ -10,7 +10,8 @@ import android.widget.TextView;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.FeedbackBean;
-import com.cbkj.rrh.utils.ToolUtils;
+import com.cbkj.rrh.main.base.KBaseAdapter;
+import com.cbkj.rrh.others.utils.ToolUtils;
 
 /**
  * @todo:意见反馈适配器

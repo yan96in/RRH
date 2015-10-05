@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用 -->
+    
+    <!-- 首页 -->
+
+    <!-- 消息 -->
+    
+    <!-- 风采 -->
+    
+    <!-- 发现 -->
+    
+    <!-- 我 -->
+    <dimen name="pull_refresh_listview_text_size">12sp</dimen>
+
+</resources>

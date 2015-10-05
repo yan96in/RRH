@@ -10,7 +10,7 @@ import android.text.style.ForegroundColorSpan;
 import android.widget.TextView;
 
 import com.cbkj.rrh.R;
-import com.cbkj.rrh.utils.ToolUtils;
+import com.cbkj.rrh.others.utils.ToolUtils;
 
 /**
  * @todo:接单人列表
@@ -47,16 +47,16 @@ public class TaskReciverBean implements Serializable{
 	 * @params:@param tvMoney
 	 */
 	public void setMoney(Activity mActivity,int taskType,TextView tvMoney){
-		ForegroundColorSpan redSpan = new ForegroundColorSpan(Color.RED);  
-		if (taskType == TaskBean.TASK_SENT_TAG) {
-			SpannableStringBuilder builder = new SpannableStringBuilder(mActivity.getResources().getString(R.string.task_want_money, charges));
-			builder.setSpan(redSpan, 4, String.valueOf(charges).length()+4, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);  
-			tvMoney.setText(builder);
-		} else {
-			SpannableStringBuilder builder = new SpannableStringBuilder(mActivity.getResources().getString(R.string.i_want_money, charges));
-			builder.setSpan(redSpan, 3, String.valueOf(charges).length()+3, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);  
-			tvMoney.setText(builder);
-		}
+//		ForegroundColorSpan redSpan = new ForegroundColorSpan(Color.RED);  
+//		if (taskType == TaskBean.TASK_SENT_TAG) {
+//			SpannableStringBuilder builder = new SpannableStringBuilder(mActivity.getResources().getString(R.string.task_want_money, charges));
+//			builder.setSpan(redSpan, 4, String.valueOf(charges).length()+4, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);  
+//			tvMoney.setText(builder);
+//		} else {
+//			SpannableStringBuilder builder = new SpannableStringBuilder(mActivity.getResources().getString(R.string.i_want_money, charges));
+//			builder.setSpan(redSpan, 3, String.valueOf(charges).length()+3, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);  
+//			tvMoney.setText(builder);
+//		}
 	}
 	
 	/**
@@ -68,6 +68,6 @@ public class TaskReciverBean implements Serializable{
 	 * @params:@param tvMoney
 	 */
 	public void setTime(Activity mActivity,TextView tvTime){
-		tvTime.setText(mActivity.getResources().getString(R.string.task_reciver_time, ToolUtils.getFormatDate(created)));
+	//	tvTime.setText(mActivity.getResources().getString(R.string.task_reciver_time, ToolUtils.getFormatDate(created)));
 	}
 }

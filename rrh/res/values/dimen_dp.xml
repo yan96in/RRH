@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    
+    
+    <!-- 通用 -->
+    
+    <dimen name="image_thumbnail_size">60dp</dimen>
+    <dimen name="image_thumbnail_spacing">5dp</dimen>
+    <dimen name="user_img_border_thick">1px</dimen>
+    <!-- 首页 -->
+
+    <!-- 消息 -->
+    
+    <!-- 风采 -->
+    
+    <!-- 发现 -->
+    
+    <!-- 我 -->
+    <dimen name="pull_refresh_listview_text_size">12sp</dimen>
+    
+    
+    
+    
+    <dimen name="img_width">85dp</dimen>
+    <dimen name="user_img_width">60dp</dimen>
+    <dimen name="user_img_small_width">50dp</dimen>
+    <dimen name="correlation_divierHeight">10dp</dimen>
+    <dimen name="divierHeight">1px</dimen>
+    <dimen name="comment_select_layout">50dp</dimen>
+    <dimen name="home_drawabletop">16dp</dimen>
+    <dimen name="message_friend_list_margin_left_right">20dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="head_icon">60dp</dimen>
+    <dimen name="chat_keybord_button_indicator">30dp</dimen>
+    <dimen name="right_menu_width">200dp</dimen>
+    <dimen name="home_ithink">12dp</dimen>
+    <dimen name="comment_padding_left">40dp</dimen>
+    <dimen name="mention_word_size">15sp</dimen>
+    <dimen name="mention_img_width">120dp</dimen>
+    <dimen name="mention_img_height">80dp</dimen>
+
+
+    <!-- common font size -->
+    <dimen name="common_size_title">18sp</dimen>
+    <dimen name="common_size_label">11sp</dimen>
+    <dimen name="common_size_context">12sp</dimen>
+
+    
+
+</resources>

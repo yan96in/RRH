@@ -11,8 +11,9 @@ import android.widget.ImageView;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.FileBean;
-import com.cbkj.rrh.system.BGApp;
-import com.cbkj.rrh.utils.LogUtils;
+import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.base.KBaseAdapter;
+import com.cbkj.rrh.others.utils.LogUtils;
 
 /***
  * @todo:图片处理界面

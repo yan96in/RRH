@@ -14,8 +14,8 @@ import android.widget.TextView;
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.CertificationBean;
 import com.cbkj.rrh.bean.UserBean;
-import com.cbkj.rrh.system.BGApp;
-import com.cbkj.rrh.ui.me.edit.MyCerfiticateActivity;
+import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.me.view.MyCerfiticateActivity;
 
 /**
  * @todo:我的证书View

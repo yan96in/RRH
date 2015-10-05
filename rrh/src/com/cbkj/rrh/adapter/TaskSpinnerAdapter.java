@@ -9,6 +9,7 @@ import android.widget.CheckedTextView;
 import android.widget.SpinnerAdapter;
 
 import com.cbkj.rrh.R;
+import com.cbkj.rrh.main.base.KBaseAdapter;
 
 
 /**

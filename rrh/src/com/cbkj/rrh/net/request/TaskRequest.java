@@ -9,7 +9,7 @@ import com.cbkj.rrh.net.http.HttpRequest;
 import com.cbkj.rrh.net.http.HttpRequestAsyncTask;
 import com.cbkj.rrh.net.http.HttpURL;
 import com.cbkj.rrh.net.http.HttpRequestAsyncTask.TaskListenerWithState;
-import com.cbkj.rrh.utils.MD5;
+import com.cbkj.rrh.others.utils.MD5;
 
 /**
  * @todo:任务相关业务

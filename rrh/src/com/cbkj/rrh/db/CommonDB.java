@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.text.TextUtils;
 
-import com.cbkj.rrh.utils.LogUtils;
+import com.cbkj.rrh.others.utils.LogUtils;
 
 /**
  * @author lzlong@zwmob.com

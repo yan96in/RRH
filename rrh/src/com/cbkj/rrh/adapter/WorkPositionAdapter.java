@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.WorkBean;
+import com.cbkj.rrh.main.base.KBaseAdapter;
 
 /**
  * 

@@ -13,15 +13,11 @@ import android.widget.TextView;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.TaskBean;
-import com.cbkj.rrh.bean.TaskBean.DataType;
 import com.cbkj.rrh.db.PreferenceUtil;
-import com.cbkj.rrh.system.BGApp;
-import com.cbkj.rrh.ui.TaskUtil;
-import com.cbkj.rrh.ui.help.ShowNameCardListener;
-import com.cbkj.rrh.ui.home.TaskRecivedActivity;
-import com.cbkj.rrh.ui.me.user.ScoreEvaluateActivity;
-import com.cbkj.rrh.ui.order.OrderDetailActivity;
-import com.cbkj.rrh.utils.SharePostUtils;
+import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.base.KBaseAdapter;
+import com.cbkj.rrh.main.help.ShowNameCardListener;
+import com.cbkj.rrh.others.utils.SharePostUtils;
 import com.cbkj.rrh.view.RoundImageView;
 
 
@@ -409,55 +405,55 @@ public class TaskAdapter extends KBaseAdapter implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-		TaskBean currentBean = (TaskBean) v.getTag();
-		switch (v.getId()) {
-		case R.id.btn_reciver:	//我要接单
-			if (currentBean.userId.equals(pUtil.getUserID())) {	//如果ID一样，就是自己发的单
-				OrderDetailActivity.goToDetail(mActivity, TaskBean.TASK_SENT_TAG, currentBean.taskId);
-			} else {
-				TaskRecivedActivity.goTaskDetail(mActivity, currentBean.taskId);
-			}
-			break;
-			
-		case R.id.tv_share:	//分享
-			currentBean.doShare(mShare);
-			break;
-			
-		case R.id.btn_affirm_finish://任务完成确认
-			if (mType == TaskType.SENT_TASK) {	//发单人确认完成任务
-				TaskUtil.getInstance().affirmFinishTask(mActivity,TaskType.SENT_TASK,DataType.DATA_LIST,pUtil.getUserID(),currentBean,this,currentBean.partnerId);
-			} else {	//接单人确认完成任务
-				TaskUtil.getInstance().affirmFinishTask(mActivity,TaskType.RECIVE_TASK,DataType.DATA_LIST,pUtil.getUserID(),currentBean,this,currentBean.userId);
-			}
-			break;
-		case R.id.btn_select_reciver: //选择接单人
-				OrderDetailActivity.goToDetail(mActivity, TaskBean.TASK_SENT_TAG, currentBean);
-			break;
-
-		case R.id.btn_contact:	//联系人//如果是我是发单人的情况，要打接单人的电话号码，如果我是接单人的情况，要拨打发单人的电话
-			TaskUtil.getInstance().callContact(mActivity,mType == TaskType.SENT_TASK?currentBean.telPartner:currentBean.telephone);
-			break;
-			
-		case R.id.btn_grade_score://评分
-			if (mType == TaskType.SENT_TASK) {
-				ScoreEvaluateActivity.doScoreAction(mActivity, ScoreEvaluateActivity.KEY_SCORE_EMPLOYEE, currentBean.taskId, currentBean.partnerId);
-			} else {
-				ScoreEvaluateActivity.doScoreAction(mActivity, ScoreEvaluateActivity.KEY_SCORE_EMPLOYER, currentBean.taskId, currentBean.userId);
-			}
-			currentBean.hasScore = 1;
-			notifyDataSetChanged();
-			break;
-		case R.id.btn_redit:	    //重新编辑
-			TaskUtil.getInstance().doReditTask(mActivity, currentBean);
-			break;
-		case R.id.btn_delay_pay:	//延期付款
-			TaskUtil.getInstance().doDelayPay(mActivity,DataType.DATA_LIST,currentBean,this);
-			break;
-		case R.id.btn_cancel_order://取消接单
-			TaskUtil.getInstance().doCancelTaskRecived(mActivity, DataType.DATA_LIST, currentBean, pUtil.getUserID(), this);
-		default:
-			break;
-		}
+//		TaskBean currentBean = (TaskBean) v.getTag();
+//		switch (v.getId()) {
+//		case R.id.btn_reciver:	//我要接单
+//			if (currentBean.userId.equals(pUtil.getUserID())) {	//如果ID一样，就是自己发的单
+//				OrderDetailActivity.goToDetail(mActivity, TaskBean.TASK_SENT_TAG, currentBean.taskId);
+//			} else {
+//				TaskRecivedActivity.goTaskDetail(mActivity, currentBean.taskId);
+//			}
+//			break;
+//			
+//		case R.id.tv_share:	//分享
+//			currentBean.doShare(mShare);
+//			break;
+//			
+//		case R.id.btn_affirm_finish://任务完成确认
+//			if (mType == TaskType.SENT_TASK) {	//发单人确认完成任务
+//				TaskUtil.getInstance().affirmFinishTask(mActivity,TaskType.SENT_TASK,DataType.DATA_LIST,pUtil.getUserID(),currentBean,this,currentBean.partnerId);
+//			} else {	//接单人确认完成任务
+//				TaskUtil.getInstance().affirmFinishTask(mActivity,TaskType.RECIVE_TASK,DataType.DATA_LIST,pUtil.getUserID(),currentBean,this,currentBean.userId);
+//			}
+//			break;
+//		case R.id.btn_select_reciver: //选择接单人
+//				OrderDetailActivity.goToDetail(mActivity, TaskBean.TASK_SENT_TAG, currentBean);
+//			break;
+//
+//		case R.id.btn_contact:	//联系人//如果是我是发单人的情况，要打接单人的电话号码，如果我是接单人的情况，要拨打发单人的电话
+//			TaskUtil.getInstance().callContact(mActivity,mType == TaskType.SENT_TASK?currentBean.telPartner:currentBean.telephone);
+//			break;
+//			
+//		case R.id.btn_grade_score://评分
+//			if (mType == TaskType.SENT_TASK) {
+//				ScoreEvaluateActivity.doScoreAction(mActivity, ScoreEvaluateActivity.KEY_SCORE_EMPLOYEE, currentBean.taskId, currentBean.partnerId);
+//			} else {
+//				ScoreEvaluateActivity.doScoreAction(mActivity, ScoreEvaluateActivity.KEY_SCORE_EMPLOYER, currentBean.taskId, currentBean.userId);
+//			}
+//			currentBean.hasScore = 1;
+//			notifyDataSetChanged();
+//			break;
+//		case R.id.btn_redit:	    //重新编辑
+//			TaskUtil.getInstance().doReditTask(mActivity, currentBean);
+//			break;
+//		case R.id.btn_delay_pay:	//延期付款
+//			TaskUtil.getInstance().doDelayPay(mActivity,DataType.DATA_LIST,currentBean,this);
+//			break;
+//		case R.id.btn_cancel_order://取消接单
+//			TaskUtil.getInstance().doCancelTaskRecived(mActivity, DataType.DATA_LIST, currentBean, pUtil.getUserID(), this);
+//		default:
+//			break;
+//		}
 		
 	}
 }

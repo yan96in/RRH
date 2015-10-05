@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.CommentBean;
+import com.cbkj.rrh.main.base.KBaseAdapter;
 
 /**
  * @todo:与我相关部分的简单评论，微墙与炫能地方可用

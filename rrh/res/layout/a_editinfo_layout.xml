@@ -36,7 +36,6 @@
 			            android:background="@drawable/bg_user_head"
 			            circleimg:border_inside_color="@color/orange_little"
            				circleimg:border_outside_color="@color/orange_little"
-          				circleimg:border_thickness="@dimen/user_img_border_thick"
           				/>
 		        
 			        <ImageView 

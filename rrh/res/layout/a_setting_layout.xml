@@ -29,7 +29,7 @@
                     android:id="@+id/siv_switch_push"
                     style="@style/select_layout_notag"
                     selectView:select_img="@drawable/icon_next"
-                    selectView:select_tag="@string/action_count"
+                    selectView:select_tag="@string/home_title_scan"
                     selectView:select_title="@string/setting_switch_push" />
 
                 <View style="@style/cut_line_horizontal" />
@@ -38,7 +38,7 @@
                     android:id="@+id/siv_conact_servicer"
                     style="@style/select_layout_notag"
                     selectView:select_img="@drawable/icon_next"
-                    selectView:select_tag="@string/action_count"
+                    selectView:select_tag="@string/home_title_scan"
                     selectView:select_title="@string/setting_contact_service" />
 
                 <View style="@style/cut_line_horizontal" />
@@ -47,7 +47,7 @@
                     android:id="@+id/siv_user_guide"
                     style="@style/select_layout_notag"
                     selectView:select_img="@drawable/icon_next"
-                    selectView:select_tag="@string/action_count"
+                    selectView:select_tag="@string/home_title_scan"
                     selectView:select_title="@string/setting_help" />
 
                 <View style="@style/cut_line_horizontal" />
@@ -56,7 +56,7 @@
                     android:id="@+id/siv_feedback"
                     style="@style/select_layout_notag"
                     selectView:select_img="@drawable/icon_next"
-                    selectView:select_tag="@string/action_count"
+                    selectView:select_tag="@string/home_title_scan"
                     selectView:select_title="@string/setting_feedback" />
 
                 <View style="@style/cut_line_horizontal" />
@@ -65,7 +65,7 @@
                     android:id="@+id/siv_service_terms"
                     style="@style/select_layout_notag"
                     selectView:select_img="@drawable/icon_next"
-                    selectView:select_tag="@string/action_count"
+                    selectView:select_tag="@string/home_title_scan"
                     selectView:select_title="@string/setting_service_terms" />
 
                 <View style="@style/cut_line_horizontal" />
@@ -74,7 +74,7 @@
                     android:id="@+id/siv_common_score"
                     style="@style/select_layout_notag"
                     selectView:select_img="@drawable/icon_next"
-                    selectView:select_tag="@string/action_count"
+                    selectView:select_tag="@string/home_title_scan"
                     selectView:select_title="@string/setting_common_score" />
 
                 <View style="@style/cut_line_horizontal" />
@@ -83,7 +83,7 @@
                     android:id="@+id/siv_check_version"
                     style="@style/select_layout_notag"
                     selectView:select_img="@drawable/icon_next"
-                    selectView:select_tag="@string/action_count"
+                    selectView:select_tag="@string/home_title_scan"
                     selectView:select_title="@string/setting_check_version" />
 
                 <View style="@style/cut_line_horizontal" />
@@ -107,7 +107,7 @@
                     android:id="@+id/siv_about"
                     style="@style/select_layout_notag"
                     selectView:select_img="@drawable/icon_next"
-                    selectView:select_tag="@string/action_count"
+                    selectView:select_tag="@string/home_title_scan"
                     selectView:select_title="@string/setting_about_us" />
 
                 <View style="@style/cut_line_horizontal" />
@@ -116,7 +116,7 @@
                     android:id="@+id/siv_recommend"
                     style="@style/select_layout_notag"
                     selectView:select_img="@drawable/icon_recommend"
-                    selectView:select_tag="@string/action_count"
+                    selectView:select_tag="@string/home_title_scan"
                     selectView:select_title="@string/setting_recommend_app" />
             </LinearLayout>
 
@@ -131,7 +131,7 @@
                     android:id="@+id/siv_modify_pwd"
                     style="@style/select_layout_notag"
                     selectView:select_img="@drawable/icon_next"
-                    selectView:select_tag="@string/action_count"
+                    selectView:select_tag="@string/home_title_scan"
                     selectView:select_title="@string/setting_modify_pwd" />
             </LinearLayout>
 

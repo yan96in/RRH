@@ -1,0 +1,1 @@
+package com.cbkj.rrh.social.view;import com.cbkj.rrh.main.base.BaseActivity;/** * @todo:TODO * @date:2015-10-5 下午4:45:21 * @author:hg_liuzl@163.com */public class SocialShowActivity extends BaseActivity {	/**	 * @todo:TODO	 * @date:2015-10-5 下午4:45:22	 * @author:hg_liuzl@163.com	 */}

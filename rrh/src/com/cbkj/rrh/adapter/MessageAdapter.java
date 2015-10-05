@@ -10,8 +10,9 @@ import android.widget.TextView;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.MessageBean;
-import com.cbkj.rrh.system.BGApp;
-import com.cbkj.rrh.utils.ToolUtils;
+import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.base.KBaseAdapter;
+import com.cbkj.rrh.others.utils.ToolUtils;
 
 
 /**

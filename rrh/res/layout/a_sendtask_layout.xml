@@ -27,7 +27,7 @@
 
                 <TextView
                     style="@style/task_send_left_title"
-                    android:text="@string/send_task_type"
+                    android:text="@string/home_title_scan"
                     android:textSize="17sp" />
 
                 <include layout="@layout/model_work_position_bar" />
@@ -42,7 +42,7 @@
 
                     <TextView
                         style="@style/task_send_left_title"
-                        android:text="@string/send_task_description" />
+                        android:text="@string/home_title_scan" />
 
                     <EditText
                         android:id="@+id/et_describe"
@@ -58,7 +58,7 @@
 
                     <TextView
                         style="@style/task_send_left_title"
-                        android:text="@string/send_task_reward" />
+                        android:text="@string/home_title_scan" />
 
                     <EditText
                         android:id="@+id/et_money"
@@ -78,7 +78,7 @@
 
                     <TextView
                         style="@style/task_send_left_title"
-                        android:text="@string/send_task_dateline" />
+                        android:text="@string/home_title_scan" />
 
                     <EditText
                         android:id="@+id/et_enddate"
@@ -93,7 +93,7 @@
 
                     <TextView
                         style="@style/task_send_left_title"
-                        android:text="@string/send_task_finishTime" />
+                        android:text="@string/home_title_scan" />
 
                     <EditText
                         android:id="@+id/et_finishtime"
@@ -112,7 +112,7 @@
 
                     <TextView
                         style="@style/task_send_left_title"
-                        android:text="@string/send_task_contact" />
+                        android:text="@string/home_title_scan" />
 
                     <EditText
                         android:id="@+id/et_contact"
@@ -127,7 +127,7 @@
 
                     <TextView
                         style="@style/task_send_left_title"
-                        android:text="@string/send_task_tel" />
+                        android:text="@string/home_title_scan" />
 
                     <EditText
                         android:id="@+id/et_tel"
@@ -142,7 +142,7 @@
                     <TextView
                         style="@style/task_send_left_title"
                         android:drawableLeft="@null"
-                        android:text="@string/send_task_address" />
+                        android:text="@string/home_title_scan" />
 
                     <EditText
                         android:id="@+id/et_address"
@@ -162,7 +162,7 @@
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/bg_send_selector"
-                android:text="@string/send_task_ok"
+                android:text="@string/home_title_scan"
                 android:textColor="@color/orange_little" />
         </LinearLayout>
     </ScrollView>

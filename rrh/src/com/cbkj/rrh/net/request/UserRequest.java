@@ -11,12 +11,13 @@ import android.content.Context;
 
 import com.alibaba.fastjson.JSON;
 import com.cbkj.rrh.bean.UserBean;
+import com.cbkj.rrh.main.account.model.ThirdLoginParam;
 import com.cbkj.rrh.net.http.HttpRequest;
 import com.cbkj.rrh.net.http.HttpRequestAsyncTask;
 import com.cbkj.rrh.net.http.HttpURL;
 import com.cbkj.rrh.net.http.HttpRequestAsyncTask.TaskListenerWithState;
-import com.cbkj.rrh.utils.FileUtils;
-import com.cbkj.rrh.utils.MD5;
+import com.cbkj.rrh.others.utils.FileUtils;
+import com.cbkj.rrh.others.utils.MD5;
 
 /**
  * @todo:用户模块的请求
@@ -214,8 +215,8 @@ public class UserRequest extends HttpRequest {
 	 * @params:@param context
 	 * @params:@param phoneNumber
 	 */
-	public void requestThirdLogin(TaskListenerWithState mHttpTaskListener,Context context,int loginType,String uid,String accessToken,String openid,int gender,String nickName,String headImgUrl,String signature) {
-		//setRequestUrl(HttpURL.URL_THIRD_LOGIN);
+	public void requestThirdLogin(TaskListenerWithState mHttpTaskListener,Context context,ThirdLoginParam param) {
+		setRequestUrl(HttpURL.URL_THIRD_LOGIN);
 		
 //		uid	第三方用户ID		Y	第三方用户ID
 //		access_token	会话数据		N	第三方返回的会话数据
@@ -228,14 +229,14 @@ public class UserRequest extends HttpRequest {
 		
 		JSONObject body = new JSONObject();
 		try {
-			body.put("source", loginType);
-			body.put("uid", uid);
-			body.put("access_token", accessToken);
-			body.put("openid", openid);
-			body.put("gender", gender);
-			body.put("nickName", nickName);
-			body.put("profile_image_url", headImgUrl);
-			body.put("signature", signature);
+			body.put("source", param.getLoginType());
+			body.put("uid", param.uid);
+			body.put("access_token", param.accessToken);
+			body.put("openid", param.openid);
+			body.put("gender", param.getGender());
+			body.put("nickName", param.nickName);
+			body.put("profile_image_url", param.headImgUrl);
+			body.put("signature", param.signature);
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}

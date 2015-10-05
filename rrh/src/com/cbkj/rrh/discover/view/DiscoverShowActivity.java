@@ -1,0 +1,1 @@
+package com.cbkj.rrh.discover.view;import com.cbkj.rrh.main.base.BaseActivity;/** * @todo:TODO * @date:2015-10-5 下午4:47:29 * @author:hg_liuzl@163.com */public class DiscoverShowActivity extends BaseActivity {	/**	 * @todo:TODO	 * @date:2015-10-5 下午4:47:29	 * @author:hg_liuzl@163.com	 */}

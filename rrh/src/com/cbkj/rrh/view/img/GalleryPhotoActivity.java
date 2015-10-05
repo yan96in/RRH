@@ -13,10 +13,10 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 
 import com.cbkj.rrh.R;
-import com.cbkj.rrh.system.BGApp;
-import com.cbkj.rrh.ui.base.BaseActivity;
+import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.base.BaseActivity;
 import com.cbkj.rrh.view.photoview.PhotoView;
-import com.cbkj.rrh.widget.TitleBar;
+import com.cbkj.rrh.view.widget.TitleBar;
 
 /**
  * @todo:用于展示图片

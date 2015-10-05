@@ -3,7 +3,7 @@ package com.cbkj.rrh.bean;
 import java.io.Serializable;
 import java.util.List;
 
-import com.cbkj.rrh.system.Const;
+import com.cbkj.rrh.main.Const;
 
 /**
  * @todo:评论实体类

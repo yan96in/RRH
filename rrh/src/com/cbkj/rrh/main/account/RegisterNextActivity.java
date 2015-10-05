@@ -1,0 +1,1 @@
+package com.cbkj.rrh.main.account;import com.cbkj.rrh.main.base.BaseActivity;/** * @todo:TODO * @date:2015-10-5 下午5:49:00 * @author:hg_liuzl@163.com */public class RegisterNextActivity extends BaseActivity {	/**	 * @todo:TODO	 * @date:2015-10-5 下午5:49:00	 * @author:hg_liuzl@163.com	 */}

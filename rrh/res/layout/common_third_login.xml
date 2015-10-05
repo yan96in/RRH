@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:thirdBar="http://schemas.android.com/apk/res/com.cbkj.rrh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+         >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/img_user_center_x_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="或" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/img_user_center_x_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp" >
+
+        <com.cbkj.rrh.view.ImgWordView
+            android:id="@+id/iw_share_qq"
+            style="@style/btn_third_style"
+            thirdBar:t_img="@drawable/btn_qq_selector"
+            thirdBar:t_text="@string/setting_share_qq" />
+
+        <com.cbkj.rrh.view.ImgWordView
+            android:id="@+id/iw_share_wx"
+            style="@style/btn_third_style"
+            thirdBar:t_img="@drawable/btn_wx_selector"
+            thirdBar:t_text="@string/setting_share_wx" />
+
+        <com.cbkj.rrh.view.ImgWordView
+            android:id="@+id/iw_share_sina"
+            style="@style/btn_third_style"
+            thirdBar:t_img="@drawable/btn_weibo_selector"
+            thirdBar:t_text="@string/setting_share_sina" />
+    </LinearLayout>
+
+</LinearLayout>

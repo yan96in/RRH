@@ -1,12 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="tips">2</string>
-<!--     <string name="app_name">炫萌</string>
-    <string name="app_version">"邦固科技 版本所有 BANDGOOD "%s</string> -->
-     <string name="viewpager_indicator">%1$d/%2$d</string>
-    	<!-- 版本更新 -->
-	<string name="soft_update_no">已经是最新版本</string>
+    <!-- 通用的 -->
+
+    <string name="main_title_count">""</string>
+    <string name="main_title_home">人人慧</string>
+    <string name="main_title_social">社交</string>
+    <string name="main_title_mien">风采</string>
+    <string name="main_title_discover">发现</string>
+    <string name="main_title_me">我的</string>
+    
+    
+    
+    <string name="system_un_login">请先登录</string>
+    <string name="system_error"></string>
+    <string name="content_title">标题：%s</string>
+    <string name="content_nick">昵称：%s</string>
+    <string name="content_content">%s</string>
+    <string name="content_publish_tip">提示：您的投稿经过萌友审核后才能发表成功</string>
+    <string name="content_upload_video_tip">每次只能上传一个视频</string>
+    <string name="content_upload_pic_tip">一次性最多上传8张图片</string>
+    <string name="agree_user_protocal">同意人人慧用户使用协议</string>
+    <string name="authcode_get_code">获取验证码</string>
+    <string name="authcode_wait_code">获取验证码(%1$s)</string>
+
+    <!-- 人人慧 -->
+    <string name="home_title_scan">扫一扫</string>
+    <string name="home_title_notification">通知</string>
+    <string name="home_title_message">消息</string>
+    <string name="home_title_communication">通讯</string>
+    <string name="home_title_team">云团队</string>
+
+    <!-- 社交 -->
+    <!-- 风采 -->
+    <!-- 发现 -->
+    <!-- 我的 -->
+
+
+    <!-- 关于App -->
+    <string name="app_channel">offical</string>
+    <string name="app_name">人人慧</string>
+    <string name="app_version">"创帮科技 版权所有"%s</string>
+
+    <!-- 设置模块 -->
+    <string name="setting_title">设置</string>
+    <string name="setting_get_money">获取萌币途径</string>
+    <string name="setting_switch_push">允许推送私活</string>
+    <string name="setting_contact_service">联系客服</string>
+    <string name="setting_help">使用指南</string>
+    <string name="setting_service_terms">服务条款</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_common_score">应用评分</string>
+    <string name="setting_check_version">版本更新</string>
+    <string name="setting_clear_cache">清理缓存</string>
+    <string name="setting_clear_tag">清理缓存</string>
+    <string name="setting_play_gif">GIF自动播放</string>
+    <string name="setting_about_us">关于啦啦私活</string>
+    <string name="setting_recommend_app">推荐给好友</string>
+    <string name="setting_modify_pwd">修改密码</string>
+    <string name="setting_login_out">退出登录</string>
+    <string name="setting_share_wx">微信</string>
+    <string name="setting_share_circle">朋友圈</string>
+    <string name="setting_share_qq">QQ</string>
+    <string name="setting_share_qzone">QQ空间</string>
+    <string name="setting_share_sina">微博</string>
+
+    <!-- 图片 -->
+    <string name="publish_take_video">拍视频</string>
+    <string name="publish_take_pic">拍照片</string>
+    <string name="publish_local_upload">本地上传</string>
+    <string name="word_get_money">&#160;1.首次注册获得70萌币\n
+									2.首次完善资料获得5萌币\n
+									3.每次分享获得2萌币\n
+									4.每次评论获得1萌币\n
+									5.每次发表图片获得3萌币\n
+									6.每次发表视频获得5萌币\n
+									7.每次点赞获得1萌币\n
+									8.每天登录获得1萌币\n
+									9.每天签到获得1萌币\n
+									10.打赏按打赏萌币数扣除萌币\n\n
+									萌币用途，敬请期待。</string>
+
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成(%1$d/%2$d)</string>
+    <string name="show_pic">%1$d/%2$d</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <!-- 版本更新 -->
+    <string name="soft_update_no">已经是最新版本</string>
     <string name="soft_update_title">版本更新</string>
     <string name="soft_update_info">检测到新版本，立即更新吗？</string>
     <string name="soft_update_updatebtn">立即更新</string>
@@ -18,39 +106,6 @@
     <string name="soft_update_cancel_alert">确定取消更新吗？</string>
     <string name="soft_update_check_now">正在检查新版本&#8230;</string>
     <string name="dlg_sdcard_load_err">SD卡空间不足或已卸载，无法下载安装应用</string>
-    
-    
-     <string name="joke_fail_verify">未通过审核原因：%s</string>
-     
-     
-     
-     
-<!--      <string name="main_title_pic">图片</string>
-     <string name="main_title_vide">视频</string>
-     <string name="main_title_me">我的</string> -->
-     
-     
-     <string name="main_title_home">首页</string>
-     <string name="main_title_contact">联系</string>
-     <string name="main_title_weiqiang">微墙</string>
-     <string name="main_title_show">炫萌</string>
-     <string name="main_title_count">1</string>
-     
-     
-     <string name="action_reward">打赏</string>
-     <string name="action_zan">点赞</string>
-     <string name="action_reply">评论</string>
-     <string name="action_share">分享</string>
-     
-     
-     <string name="action_original">原创</string>
-     <string name="action_disagree">不萌</string>
-     <string name="action_agree">萌萌哒</string>
-     <string name="action_count">1</string>
-     <string name="errcode_success">发送成功</string>
-	<string name="errcode_cancel">发送取消</string>
-	<string name="errcode_deny">发送被拒绝</string>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-	<string name="errcode_unknown">发送返回</string>
 
     <!-- 下拉刷新 -->
     <string name="pull_down_to_refresh_pull_label">上拉可以刷新</string>
@@ -62,12 +117,11 @@
     <string name="pull_to_refresh_from_bottom_refreshing_label">正在刷新…</string>
 
     <!-- Xlistview -->
-    
+
     <string name="pull_to_refresh_pull_label" translatable="false">向下拉动可以刷新</string>
     <string name="pull_to_refresh_release_label" translatable="false">松开可以刷新</string>
     <string name="pull_to_refresh_refreshing_label" translatable="false">加载中&#8230;</string>
     <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
-    
     <string name="xlistview_header_hint_normal">下拉刷新</string>
     <string name="xlistview_header_hint_ready">松开刷新数据</string>
     <string name="xlistview_header_hint_loading">正在加载...</string>
@@ -76,22 +130,7 @@
     <string name="xlistview_footer_hint_no_more">没有更多了</string>
     <string name="xlistview_footer_hint_ready">松开载入更多</string>
 
-    <!-- 首页 -->
-    <string name="speech_text_begin">请开始说话&#8230;</string>
-     <string name="search_result_comm_size">交流厅人数：%1$s人</string>
-     
-    
-    
-    
-    <!-- 个人中心 -->
-    <string name="account_vip">VIP%s</string>
-    <string name="account_number">能能号：%s</string>
-    <string name="action_add_attention">立即关注</string>
-    <string name="action_add_friend">添加好友</string>
-    <string name="action_chat">发起会话</string>
-    
-    
-    <!-- 协议  -->
+    <!-- 协议 -->
     <string name="xn_protocol_title">宝宝宠物萌软件最终用户\n使用许可协议</string>
     <string name="xn_protocol_content">\t\t宝宝宠物萌 软件最终用户许可协议
 重要须知━请认真阅读：本《最终用户许可协议》（以下称《协议》）是您（单一实体）与 宝宝宠物萌之间有关上述宝宝宠物萌软件产品的法律协议。 \n\t\t
@@ -136,22 +175,5 @@
 但是，如果您已经与深圳市邦固科技有限公司达成支持服务协议，深圳市邦固科技有限公司就支持服务的全部赔偿责任应以该协议条款为准。  \n\t\t
 本《协议》受中华人民共和国法律管辖。
 如果您对本《协议》有什么问题，请同深圳市邦固科技有限公司 联系，或写信给sz_banggu@qq.com。 \n \n</string>
-
-    <string name="joke_rule">
-		\t\t1.奖金分配方式:
-		\n\t\t\t\t日排行\n\t\t\t\t\t\t第一名 50元
-		\n\t\t\t\t周排行\n\t\t\t\t\t\t第一名 100元
-					  \n\t\t\t\t\t\t第二名  50元
-		\n\t\t\t\t月排行\n\t\t\t\t\t\t第一名  300元
-					  \n\t\t\t\t\t\t第二名  200元
-					  \n\t\t\t\t\t\t第三名  100元
-		\n\t\t\t\t每周结算一次现金转帐给获奖者或者给用户充值对应金额的话费
-		\n\t\t2.采取积分制：按积分高低列出日排行、周排行、月排行名次 从榜单中可以查询用户得奖情况
-		\n\t\t3.作品获得积分的计算方法！1分/点赞 、1分/评论、1分/转发、2分/分享！（同个用户转发，分享，评论同条稿件分别记首次分）。
-		\n\t\t4.系统自动统计加分！
-        
-    </string>
-    
-    <string name="joke_rule_title"> 幽默秀有奖投稿规则</string>
 
 </resources>

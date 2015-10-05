@@ -14,30 +14,6 @@
         android:background="@drawable/img_user_center_bg"
         android:orientation="vertical" >
 
-        <LinearLayout
-            style="@style/layout_edittext_content"
-            android:background="@null"
-            android:orientation="horizontal" >
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/icon_nick" />
-
-            <View style="@style/cut_line_vertical" />
-
-            <EditText
-                android:id="@+id/et_nickname"
-                style="@style/edittext_parent"
-                android:hint="请输入您的昵称" >
-
-                <requestFocus />
-            </EditText>
-        </LinearLayout>
-
         <View style="@style/cut_line_horizontal" />
 
         <LinearLayout
@@ -62,6 +38,33 @@
 
                 <requestFocus />
             </EditText>
+
+            <Button
+                android:id="@+id/btn_verify_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1.5"
+                android:background="@color/bg_auth_code"
+                android:text="@string/authcode_get_code"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View style="@style/cut_line_horizontal" />
+
+        <LinearLayout
+            style="@style/layout_edittext_content"
+            android:background="@null"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_verify_code"
+                style="@style/edittext_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="输入验证码" />
         </LinearLayout>
 
         <View style="@style/cut_line_horizontal" />
@@ -88,39 +91,32 @@
         </LinearLayout>
 
         <View style="@style/cut_line_horizontal" />
-
-        <LinearLayout
-            style="@style/layout_edittext_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@null"
-            android:orientation="horizontal" >
-
-            <EditText
-                android:id="@+id/et_verify_code"
-                style="@style/edittext_parent"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:hint="输入验证码" />
-
-            <Button
-                android:id="@+id/btn_verify_code"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1.5"
-                android:background="@color/bg_auth_code"
-                android:text="@string/authcode_get_code"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-        <View style="@style/cut_line_horizontal" />
-
-        <include layout="@layout/model_work_position_bar" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_protocal"
+            style="@style/text_common"
+            android:text="注册即表示同意人人慧用户使用协议"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+    
+    <include layout="@layout/common_third_login"/>
+    
+    <Button 
+        android:id="@+id/btn_visitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="游客"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        />
 
 </LinearLayout>

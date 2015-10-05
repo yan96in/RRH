@@ -13,7 +13,7 @@ import org.json.JSONObject;
 import android.content.Context;
 
 import com.cbkj.rrh.R;
-import com.cbkj.rrh.utils.DeviceUtils;
+import com.cbkj.rrh.others.utils.DeviceUtils;
 
 /**
  * @todo:http请求的基类

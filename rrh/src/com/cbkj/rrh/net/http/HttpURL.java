@@ -26,6 +26,8 @@ public class HttpURL {
 	
 	/**登录操作**/
 	public static final String URL_LOGIN = BASE_URL + "/account/login";
+	/**第三方登录操作**/
+	public static final String URL_THIRD_LOGIN = BASE_URL + "/account/login";
 	
 	/**用户资料**/
 	public static final String URL_USER_PROFILE = BASE_URL + "/account/userProfile";

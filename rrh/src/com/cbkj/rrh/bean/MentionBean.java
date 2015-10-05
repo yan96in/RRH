@@ -2,8 +2,8 @@ package com.cbkj.rrh.bean;
 
 import java.util.List;
 
-import com.cbkj.rrh.system.Const;
-import com.cbkj.rrh.utils.SharePostUtils;
+import com.cbkj.rrh.main.Const;
+import com.cbkj.rrh.others.utils.SharePostUtils;
 
 /**
  * @todo:与我相关

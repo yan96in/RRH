@@ -22,8 +22,8 @@
             android:layout_marginBottom="15dp"
             android:background="@drawable/img_user_center_bg"
             selectView:select_img="@drawable/icon_next"
-            selectView:select_tag="@string/action_count"
-            selectView:select_title="@string/employer_sent_success" />
+            selectView:select_tag="@string/home_title_scan"
+            selectView:select_title="@string/home_title_scan" />
 
         <!-- 证书预留位置 -->
 
@@ -37,8 +37,8 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/img_user_center_bg"
             selectView:select_img="@drawable/icon_next"
-            selectView:select_tag="@string/action_count"
-            selectView:select_title="@string/employer_sent_task" />
+            selectView:select_tag="@string/home_title_scan"
+            selectView:select_title="@string/home_title_scan" />
 
         <!--
          <com.bgood.task.widget.SelectItemView

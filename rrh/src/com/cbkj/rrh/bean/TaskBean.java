@@ -15,10 +15,10 @@ import android.widget.TextView;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.adapter.TaskAdapter.TaskType;
-import com.cbkj.rrh.system.Const;
-import com.cbkj.rrh.utils.DeviceUtils;
-import com.cbkj.rrh.utils.SharePostUtils;
-import com.cbkj.rrh.utils.ToolUtils;
+import com.cbkj.rrh.main.Const;
+import com.cbkj.rrh.others.utils.DeviceUtils;
+import com.cbkj.rrh.others.utils.SharePostUtils;
+import com.cbkj.rrh.others.utils.ToolUtils;
 
 /**
  * @todo:任务类
@@ -178,15 +178,15 @@ public class TaskBean implements Serializable {
 	}
 	
 	public void setMoney(Activity mActivity,TextView tvMoney){
-		tvMoney.setText(getFormatStr(mActivity, R.string.task_offer_money, String.valueOf(charges)));
+		//tvMoney.setText(getFormatStr(mActivity, R.string.task_offer_money, String.valueOf(charges)));
 	}
 	
 	public void setEndTime(Activity mActivity,TextView tvEndTime) {
-		tvEndTime.setText(getFormatStr(mActivity, R.string.task_deadline, TextUtils.isEmpty(deadline)?"已截止":deadline));
+		//tvEndTime.setText(getFormatStr(mActivity, R.string.task_deadline, TextUtils.isEmpty(deadline)?"已截止":deadline));
 	}
 	
 	public void setFinishTime(Activity mActivity,TextView tvFinishTime) {
-		tvFinishTime.setText(getFormatStr(mActivity, R.string.task_plan_time, getFinishTime()));
+		//tvFinishTime.setText(getFormatStr(mActivity, R.string.task_plan_time, getFinishTime()));
 	}
 	
 	public void setPublishTime(Activity mActivity,TextView tvPublishTime) {

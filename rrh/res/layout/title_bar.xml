@@ -8,7 +8,9 @@
 
         <Button
             android:id="@+id/btn_back"
-            style="@style/common_btn_back_style" />
+            style="@style/common_btn_back_style"
+            android:text="返回"
+             />
 
         <TextView
             android:id="@+id/tv_title"
