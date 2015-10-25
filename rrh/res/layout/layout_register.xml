@@ -29,8 +29,6 @@
                 android:layout_marginRight="10dp"
                 android:src="@drawable/icon_mobile" />
 
-            <View style="@style/cut_line_vertical" />
-
             <EditText
                 android:id="@+id/et_phone_number"
                 style="@style/edittext_number"
@@ -59,6 +57,14 @@
             android:background="@null"
             android:orientation="horizontal" >
 
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_mobile" />
+
             <EditText
                 android:id="@+id/et_verify_code"
                 style="@style/edittext_parent"
@@ -82,8 +88,6 @@
                 android:layout_marginRight="10dp"
                 android:src="@drawable/icon_lock" />
 
-            <View style="@style/cut_line_vertical" />
-
             <EditText
                 android:id="@+id/et_password"
                 style="@style/edittext_pwd"
@@ -96,8 +100,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="horizontal" >
 
@@ -107,16 +111,15 @@
             android:text="注册即表示同意人人慧用户使用协议"
             android:textColor="@color/gray_text" />
     </LinearLayout>
-    
-    <include layout="@layout/common_third_login"/>
-    
-    <Button 
+
+    <include layout="@layout/common_third_login" />
+
+    <Button
         android:id="@+id/btn_visitor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="游客"
         android:layout_gravity="center_horizontal"
         android:layout_margin="30dp"
-        />
+        android:text="游客" />
 
 </LinearLayout>

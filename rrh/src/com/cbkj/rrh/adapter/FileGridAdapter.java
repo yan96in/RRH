@@ -15,7 +15,7 @@ import android.widget.RelativeLayout;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.FileBean;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.main.base.KBaseAdapter;
 import com.cbkj.rrh.others.utils.DeviceUtils;
 
@@ -67,7 +67,7 @@ public class FileGridAdapter extends KBaseAdapter {
 		imageView.setLayoutParams(linearParams);
 //		imageView.setScaleType(ScaleType.CENTER_CROP);
 //		imageView.setAdjustViewBounds(true);
-		BGApp.getInstance().setImageSqure(imageSmallUrls.get(position), imageView);
+		CBApp.getInstance().setImageSqure(imageSmallUrls.get(position), imageView);
 		notifyDataSetChanged();
 		return convertView;
 	}

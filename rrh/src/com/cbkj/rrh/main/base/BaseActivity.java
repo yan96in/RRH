@@ -9,7 +9,7 @@ import android.view.inputmethod.InputMethodManager;
 
 import com.cbkj.rrh.db.DBHelper;
 import com.cbkj.rrh.db.PreferenceUtil;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 /**
  * 
  * @todo:Activity基类
@@ -30,7 +30,7 @@ public class BaseActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.mActivity = this;
-		BGApp.getInstance().addActivity(this);
+		CBApp.getInstance().addActivity(this);
 		inflater = LayoutInflater.from(this);
 		im = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
 		pUitl = new PreferenceUtil(this, PreferenceUtil.PREFERENCE_FILE);

@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.alibaba.fastjson.JSON;
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.NameCardBean;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.main.base.BaseBackActivity;
 import com.cbkj.rrh.net.http.HttpRequest;
 import com.cbkj.rrh.net.http.HttpRequestAsyncTask.TaskListenerWithState;
@@ -88,7 +88,7 @@ public class SentterNameCardActivity extends BaseBackActivity implements TaskLis
 	
 	private void setData(final NameCardBean bean) {
 		
-		BGApp.getInstance().setImageSqure(bean.smallImg, ivHead);
+		CBApp.getInstance().setImageSqure(bean.smallImg, ivHead);
 		tvNick.setText(bean.nickName);
 		ivSex.setBackgroundResource(bean.gender == 0 ? R.drawable.icon_female:R.drawable.icon_male);
 		sivSentSuccess.setTvContent(bean.successLTimes+"次");

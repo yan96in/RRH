@@ -8,7 +8,7 @@ import android.view.inputmethod.InputMethodManager;
 
 import com.cbkj.rrh.db.DBHelper;
 import com.cbkj.rrh.db.PreferenceUtil;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.others.utils.SharePostUtils;
 import com.cbkj.rrh.view.swipeback.app.SwipeBackActivity;
 import com.umeng.socialize.sso.UMSsoHandler;
@@ -33,7 +33,7 @@ public class BaseBackActivity extends SwipeBackActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.mActivity = this;
-		BGApp.getInstance().addActivity(this);
+		CBApp.getInstance().addActivity(this);
 		inflater = LayoutInflater.from(this);
 		im = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
 		pUitl = new PreferenceUtil(this, PreferenceUtil.PREFERENCE_FILE);

@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.MessageBean;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.main.base.KBaseAdapter;
 import com.cbkj.rrh.others.utils.ToolUtils;
 
@@ -52,7 +52,7 @@ public class MessageAdapter extends KBaseAdapter
         	holder.ivHeader.setBackgroundResource(R.drawable.icon_message_bg);
         	holder.tvNick.setText("啦啦私活");
 		} else {
-			BGApp.getInstance().setImageSqure(message.smallImg, holder.ivHeader);
+			CBApp.getInstance().setImageSqure(message.smallImg, holder.ivHeader);
 			holder.tvNick.setText(message.nickName);
 		}
         

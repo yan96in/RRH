@@ -25,7 +25,7 @@ import com.nostra13.universalimageloader.core.download.ImageDownloader.Scheme;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import com.tencent.bugly.crashreport.CrashReport;
 
-public class BGApp extends Application {
+public class CBApp extends Application {
 	
 	/**职业分类**/
 	public static List<WorkBean> workbeans = null;
@@ -37,22 +37,22 @@ public class BGApp extends Application {
 //	/**存放用户编号*/
 //	public static String mUserId = "";
 	
-	private static BGApp instance = null;
+	private static CBApp instance = null;
 	
 	@Override
 	public void onCreate()
 	{
 		super.onCreate();
 		
-		/**腾讯 bug监控工具**/
-		CrashReport.initCrashReport(this, Const.TX_BUGLY_ID, false);
+//		/**腾讯 bug监控工具**/
+//		CrashReport.initCrashReport(this, Const.TX_BUGLY_ID, false);
 		
         instance = this;
         /**图片加载*/
         initImgDisPlay();
 	}
 	
-	public static BGApp getInstance() {
+	public static CBApp getInstance() {
 		return instance;
 	}
 	
@@ -176,7 +176,7 @@ public class BGApp extends Application {
 		
 		@Override
 		public void onLoadingComplete(String arg0, View arg1, Bitmap arg2) {
-			Animation anim = AnimationUtils.loadAnimation(BGApp.this, R.anim.pic_show_in);
+			Animation anim = AnimationUtils.loadAnimation(CBApp.this, R.anim.pic_show_in);
 			iv.setAnimation(anim);
 			anim.start();
 

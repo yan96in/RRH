@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.FileBean;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.main.base.KBaseAdapter;
 import com.cbkj.rrh.others.utils.LogUtils;
 
@@ -57,7 +57,7 @@ public class PicImageAdapter extends KBaseAdapter {
 			LogUtils.i("----------------------"+position);
 			final FileBean fileBean = (FileBean) mList.get(position);
 			if (!fileBean.small.equals(holder.imageImgV.getTag())) {
-				BGApp.getInstance().setImageSqure(fileBean.small, holder.imageImgV);
+				CBApp.getInstance().setImageSqure(fileBean.small, holder.imageImgV);
 				holder.imageImgV.setTag(fileBean.small);
 			}
 			holder.ivDelete.setVisibility(showDelete ? View.VISIBLE:View.GONE);

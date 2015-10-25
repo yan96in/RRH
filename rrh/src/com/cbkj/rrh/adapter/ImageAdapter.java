@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.FileBean;
 import com.cbkj.rrh.bean.ImageBean;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.main.Const;
 import com.cbkj.rrh.main.base.KBaseAdapter;
 /***
@@ -111,7 +111,7 @@ public class ImageAdapter extends KBaseAdapter {
 		ivDelete.setOnClickListener(mListener);
 		ivDelete.setTag(position);
 		if (null != fileBean) {
-			BGApp.getInstance().setImageSqure(fileBean.small, ivImg);
+			CBApp.getInstance().setImageSqure(fileBean.small, ivImg);
 			ivDelete.setVisibility(View.VISIBLE);
 		} 
 		else
@@ -137,12 +137,12 @@ public class ImageAdapter extends KBaseAdapter {
 	
 	/**图片的url方式展示图片*/
 	private void imgType(int position,ImageBean bean,final ImageView ivImg){
-		BGApp.getInstance().setImageSqure(bean.img_thum, ivImg);
+		CBApp.getInstance().setImageSqure(bean.img_thum, ivImg);
 	}
 	
 	/**图片的url方式展示图片*/
 	private void fileType(int position,FileBean bean,final ImageView ivImg){
-		BGApp.getInstance().setImageSqure(bean.small, ivImg);
+		CBApp.getInstance().setImageSqure(bean.small, ivImg);
 	}
 
 	class Holder {

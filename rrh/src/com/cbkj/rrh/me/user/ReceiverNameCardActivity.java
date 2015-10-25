@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.alibaba.fastjson.JSON;
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.NameCardBean;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.main.base.BaseBackActivity;
 import com.cbkj.rrh.me.view.EditSelfAssessmentActivity;
 import com.cbkj.rrh.net.http.HttpRequest;
@@ -92,7 +92,7 @@ public class ReceiverNameCardActivity extends BaseBackActivity implements TaskLi
 	}
 	
 	private void setData() {
-		BGApp.getInstance().setImageSqure(bean.smallImg, ivHead);
+		CBApp.getInstance().setImageSqure(bean.smallImg, ivHead);
 		tvNick.setText(bean.nickName);
 		
 		ivSex.setBackgroundResource(bean.gender == 0?R.drawable.icon_female:R.drawable.icon_male);

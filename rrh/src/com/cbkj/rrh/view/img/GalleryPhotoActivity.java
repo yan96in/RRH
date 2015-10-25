@@ -13,7 +13,7 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 
 import com.cbkj.rrh.R;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.main.base.BaseActivity;
 import com.cbkj.rrh.view.photoview.PhotoView;
 import com.cbkj.rrh.view.widget.TitleBar;
@@ -87,7 +87,7 @@ public class GalleryPhotoActivity extends BaseActivity implements OnClickListene
 			listViews = new ArrayList<View>();
 		PhotoView img = new PhotoView(this);
 		img.setBackgroundColor(0xff000000);
-		BGApp.getInstance().setImageSqure(path, img);
+		CBApp.getInstance().setImageSqure(path, img);
 		img.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
 				LayoutParams.MATCH_PARENT));
 		listViews.add(img);

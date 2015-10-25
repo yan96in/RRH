@@ -14,7 +14,7 @@ import com.alibaba.fastjson.JSON;
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.ScoreBean;
 import com.cbkj.rrh.bean.UserBean;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.main.MessageReceiver;
 import com.cbkj.rrh.main.base.BaseActivity;
 import com.cbkj.rrh.me.more.SettingActivity;
@@ -170,7 +170,7 @@ public class MeActivity extends BaseActivity implements OnClickListener,TaskList
 		imgList.clear();
 		imgList.add(mUserBean.bigImg);
 
-		BGApp.getInstance().setImageSqure(mUserBean.smallImg, rivUser);
+		CBApp.getInstance().setImageSqure(mUserBean.smallImg, rivUser);
 		
 		tvNick.setText(mUserBean.nickName);
 		

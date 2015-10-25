@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.TaskBean;
 import com.cbkj.rrh.db.PreferenceUtil;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.main.base.KBaseAdapter;
 import com.cbkj.rrh.main.help.ShowNameCardListener;
 import com.cbkj.rrh.others.utils.SharePostUtils;
@@ -114,7 +114,7 @@ public class TaskAdapter extends KBaseAdapter implements OnClickListener {
 		
 		final TaskBean bean = (TaskBean) mList.get(position);
 		
-		BGApp.getInstance().setImageSqure(bean.smallImg, holder.rvImg);
+		CBApp.getInstance().setImageSqure(bean.smallImg, holder.rvImg);
 		
 		holder.rvImg.setOnClickListener(new ShowNameCardListener(bean, mActivity));
 		

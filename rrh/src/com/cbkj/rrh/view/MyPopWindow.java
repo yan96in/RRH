@@ -23,7 +23,7 @@ import com.cbkj.rrh.R;
 import com.cbkj.rrh.adapter.WorkPositionAdapter;
 import com.cbkj.rrh.bean.WorkBean;
 import com.cbkj.rrh.db.PreferenceUtil;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.net.http.HttpRequest;
 import com.cbkj.rrh.net.http.HttpRequestAsyncTask.TaskListenerWithState;
 import com.cbkj.rrh.net.http.HttpResponse;
@@ -72,11 +72,11 @@ public class MyPopWindow implements TaskListenerWithState,OnItemClickListener {
 				mWorkBeans.addAll(pUtils.getWorkBeans());
 			}
 		} else {// 获取网络数据
-			if (BGApp.workbeans == null) {
+			if (CBApp.workbeans == null) {
 				UserRequest.getInstance().requestPositonList(this, mActivity);
 			}else{
 				mWorkBeans.clear();
-				mWorkBeans.addAll(BGApp.workbeans);
+				mWorkBeans.addAll(CBApp.workbeans);
 			}
 		}
 	}
@@ -248,7 +248,7 @@ public class MyPopWindow implements TaskListenerWithState,OnItemClickListener {
 				if (response.result.getSuccess()) { // 获取成功
 					List<WorkBean> results = JSON.parseArray(response.result.getStrBody(), WorkBean.class);
 					mWorkBeans.addAll(results);
-					BGApp.workbeans = results;
+					CBApp.workbeans = results;
 					pUtils.storeWorkbeans(response.result.getStrBody());
 					setDefault();
 				}else{

@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.alibaba.fastjson.JSON;
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.TaskBean;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.main.MainActivity;
 import com.cbkj.rrh.main.base.BaseBackActivity;
 import com.cbkj.rrh.main.help.ShowNameCardListener;
@@ -84,7 +84,7 @@ public class TaskRecivedActivity extends BaseBackActivity implements OnClickList
 		tv.setOnClickListener(new ShowNameCardListener(mCurrentBean, mActivity));
 		
 		RoundImageView rvImage = (RoundImageView) findViewById(R.id.riv_user);
-		BGApp.getInstance().setImageSqure(mCurrentBean.smallImg, rvImage);
+		CBApp.getInstance().setImageSqure(mCurrentBean.smallImg, rvImage);
 		rvImage.setOnClickListener(new ShowNameCardListener(mCurrentBean, mActivity));
 		
 		tv = (TextView) findViewById(R.id.tv_money);

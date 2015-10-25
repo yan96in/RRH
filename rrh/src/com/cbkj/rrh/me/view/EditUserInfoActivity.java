@@ -19,7 +19,7 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.UserBean;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.main.base.BaseBackActivity;
 import com.cbkj.rrh.net.http.HttpRequest;
 import com.cbkj.rrh.net.http.HttpRequestAsyncTask.TaskListenerWithState;
@@ -107,7 +107,7 @@ public class EditUserInfoActivity extends BaseBackActivity implements TaskListen
 	}
 	
 	private void initData() {
-		BGApp.getInstance().setImageSqure(userBean.smallImg, riv);
+		CBApp.getInstance().setImageSqure(userBean.smallImg, riv);
 		metNick.setContent(userBean.nickName);
 		RadioButton rg = (RadioButton) rgSex.getChildAt(userBean.gender == 0 ?1 : 0);
 		rg.setChecked(true);

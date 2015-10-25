@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.cbkj.rrh.R;
 import com.cbkj.rrh.bean.CertificationBean;
 import com.cbkj.rrh.bean.UserBean;
-import com.cbkj.rrh.main.BGApp;
+import com.cbkj.rrh.main.CBApp;
 import com.cbkj.rrh.me.view.MyCerfiticateActivity;
 
 /**
@@ -69,12 +69,12 @@ public class CertificateView implements OnClickListener {
 			switch (i) {
 			case 0:
 				iv = (ImageView) mActivity.findViewById(R.id.iv_one);
-				BGApp.getInstance().setImageSqure(bean.smallImg, iv);
+				CBApp.getInstance().setImageSqure(bean.smallImg, iv);
 				iv.setVisibility(TextUtils.isEmpty(bean.smallImg)?View.INVISIBLE:View.VISIBLE);
 				break;
 			case 1:
 				iv = (ImageView) mActivity.findViewById(R.id.iv_two);
-				BGApp.getInstance().setImageSqure(bean.smallImg, iv);
+				CBApp.getInstance().setImageSqure(bean.smallImg, iv);
 				iv.setVisibility(TextUtils.isEmpty(bean.smallImg)?View.INVISIBLE:View.VISIBLE);
 				break;
 
